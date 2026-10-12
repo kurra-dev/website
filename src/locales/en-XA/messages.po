@@ -21,6 +21,10 @@ msgstr ""
 msgid "Registries, tokens, roles, usage, and activity belong to one tenant, a team or business unit inside your organization."
 msgstr ""
 
+#: src/site/Ecosystems.tsx
+msgid "Docker, Helm, and Terraform have no advisory or license check."
+msgstr ""
+
 #: src/site/SetupTabs.tsx
 msgid "Client"
 msgstr ""
@@ -219,6 +223,10 @@ msgid "Package managers keep working the way they do today. You change the addre
 msgstr ""
 
 #: src/site/Compliance.tsx
+msgid "Each version is checked against published advisories from npm and OSV when it is first pulled, and cached versions are checked again later. This covers every ecosystem except Docker, Helm, and Terraform."
+msgstr ""
+
+#: src/site/Compliance.tsx
 msgid "Which checks are included depends on your plan."
 msgstr ""
 
@@ -245,10 +253,6 @@ msgstr ""
 
 #: src/site/Access.tsx
 msgid "Give each token only what it needs"
-msgstr ""
-
-#: src/site/Compliance.tsx
-msgid "Each version is checked against published advisories from npm and OSV. This covers npm, Go, Cargo, Maven, and NuGet, and PyPI on first pull."
 msgstr ""
 
 #: src/site/Header.tsx
@@ -289,10 +293,6 @@ msgstr ""
 
 #: src/site/Header.tsx
 msgid "Compliance"
-msgstr ""
-
-#: src/site/Compliance.tsx
-msgid "Flags a package name that looks like a typosquat of a popular one, before the package is fetched."
 msgstr ""
 
 #: src/site/Hosting.tsx
@@ -387,16 +387,16 @@ msgstr ""
 msgid "Each tenant configures its own S3-compatible bucket. Kurra has none of its own."
 msgstr ""
 
-#: src/site/Ecosystems.tsx
-msgid "PyPI advisories are checked on first pull only."
-msgstr ""
-
 #: src/site/DecisionStream.tsx
 msgid "Activity"
 msgstr ""
 
 #: src/site/DecisionStream.tsx
 msgid "Times in UTC"
+msgstr ""
+
+#: src/site/Compliance.tsx
+msgid "Flags an npm or PyPI package name that looks like a typosquat of a popular one, before the package is fetched."
 msgstr ""
 
 #: src/site/DecisionStream.tsx

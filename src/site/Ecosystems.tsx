@@ -4,14 +4,20 @@ import { ECOSYSTEMS } from "./ecosystem-data";
 import { EcosystemTile, type EcosystemId } from "./glyphs";
 import { Section, SectionHead } from "./Section";
 
-// Where each check has data to work with (glossary: facts the copy must not contradict, 4 and 5).
+// Where each check applies (glossary: facts the copy must not contradict, 4 and 5). Docker, Helm and Terraform have
+// neither check.
 const ADVISORIES: ReadonlySet<EcosystemId> = new Set([
   "npm",
-  "go",
+  "pypi",
+  "rubygems",
+  "composer",
   "cargo",
+  "go",
   "maven",
   "nuget",
-  "pypi",
+  "apt",
+  "apk",
+  "rpm",
 ]);
 const LICENSES: ReadonlySet<EcosystemId> = new Set([
   "npm",
@@ -59,7 +65,7 @@ export function Ecosystems() {
         ))}
       </ul>
       <p className="footnote">
-        <Trans>PyPI advisories are checked on first pull only.</Trans>
+        <Trans>Docker, Helm, and Terraform have no advisory or license check.</Trans>
       </p>
     </Section>
   );
