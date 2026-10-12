@@ -36,6 +36,7 @@ export default tseslint.config(
       "src/site/sample-data.ts",
       "src/site/ecosystem-data.ts",
       "src/site/client-output.ts",
+      "src/site/config.ts",
       "src/site/SetupTabs.tsx",
     ],
     plugins: { lingui },

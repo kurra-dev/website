@@ -37,6 +37,10 @@ msgstr ""
 msgid "A caching gateway for package registries."
 msgstr ""
 
+#: src/site/Compliance.tsx
+msgid "Set an SPDX allow or deny list. This covers npm, PyPI, Cargo, Go, Maven, and NuGet. A license Kurra can’t read is allowed, not blocked."
+msgstr ""
+
 #: src/site/samples.tsx
 msgid "Reputation check: the name resembles <0>{popular}</0>."
 msgstr ""
@@ -47,19 +51,11 @@ msgid "Blocked"
 msgstr ""
 
 #: src/site/Compliance.tsx
-msgid "Verifies SLSA provenance from a Sigstore bundle you supply, for packages you host. kurra stores public keys and never signs anything."
-msgstr ""
-
-#: src/site/Compliance.tsx
 msgid "Each decision is recorded with what decided, when, and why. The audit log behind it is tamper-evident and can be exported on the Enterprise plan."
 msgstr ""
 
 #: src/site/Decisions.tsx
 msgid "People can also allow or block a package by hand. A manual decision never expires, and only a person can clear it."
-msgstr ""
-
-#: src/site/meta.ts
-msgid "Point your package managers at kurra. Every package is Allowed or Blocked, and the reason is recorded."
 msgstr ""
 
 #: src/site/Access.tsx
@@ -98,8 +94,8 @@ msgstr ""
 msgid "Name"
 msgstr ""
 
-#: src/site/Footer.tsx
-msgid "© {year} kurra"
+#: src/site/Decisions.tsx
+msgid "Every package version is Allowed or Blocked. Kurra records what decided and why, so the person whose build stopped can read the rule that stopped it."
 msgstr ""
 
 #: src/site/DecisionStream.tsx
@@ -109,6 +105,11 @@ msgstr ""
 #: src/routes/not-found.tsx
 #: src/site/meta.ts
 msgid "Page not found"
+msgstr ""
+
+#: src/site/Hero.tsx
+#: src/site/Hosting.tsx
+msgid "View Kurra on GitHub"
 msgstr ""
 
 #: src/site/Access.tsx
@@ -140,9 +141,8 @@ msgstr ""
 msgid "The reason names the cause, such as an advisory, a license, or an administrator. Clients get an error that names the rule and points to a way forward."
 msgstr ""
 
-#: src/site/Hero.tsx
-#: src/site/Hosting.tsx
-msgid "View kurra on GitHub"
+#: src/site/meta.ts
+msgid "Kurra: a caching gateway for package registries"
 msgstr ""
 
 #: src/site/Access.tsx
@@ -163,6 +163,10 @@ msgstr ""
 
 #: src/site/Ecosystems.tsx
 msgid "Tokens, roles, and activity work the same way in every ecosystem. Advisory and license checks apply where the ecosystem has the data for them."
+msgstr ""
+
+#: src/site/Hosting.tsx
+msgid "Run Kurra with Docker Compose or a Helm chart, inside your own network."
 msgstr ""
 
 #: src/site/Setup.tsx
@@ -193,8 +197,8 @@ msgstr ""
 msgid "View on GitHub"
 msgstr ""
 
-#: src/site/Setup.tsx
-msgid "Package managers keep working the way they do today. You change the address they use, and kurra serves what the upstream has, after checking it."
+#: src/site/Footer.tsx
+msgid "© {year} Kurra"
 msgstr ""
 
 #: src/site/Access.tsx
@@ -210,12 +214,8 @@ msgstr ""
 msgid "Allowed"
 msgstr ""
 
-#: src/site/Decisions.tsx
-msgid "kurra refuses to serve it"
-msgstr ""
-
-#: src/site/Hosting.tsx
-msgid "Each tenant configures its own S3-compatible bucket. kurra has none of its own."
+#: src/site/Setup.tsx
+msgid "Package managers keep working the way they do today. You change the address they use, and Kurra serves what the upstream has, after checking it."
 msgstr ""
 
 #: src/site/Compliance.tsx
@@ -243,14 +243,6 @@ msgstr ""
 msgid "Advisories"
 msgstr ""
 
-#: src/site/Hosting.tsx
-msgid "Run kurra with Docker Compose or a Helm chart, inside your own network."
-msgstr ""
-
-#: src/site/Decisions.tsx
-msgid "Every package version is Allowed or Blocked. kurra records what decided and why, so the person whose build stopped can read the rule that stopped it."
-msgstr ""
-
 #: src/site/Access.tsx
 msgid "Give each token only what it needs"
 msgstr ""
@@ -263,6 +255,10 @@ msgstr ""
 msgid "Access"
 msgstr ""
 
+#: src/site/Decisions.tsx
+msgid "Kurra refuses to serve it"
+msgstr ""
+
 #: src/site/SetupTabs.tsx
 msgid "Configuration copied"
 msgstr ""
@@ -271,12 +267,8 @@ msgstr ""
 msgid "License <0>{license}</0> is blocked by the license policy."
 msgstr ""
 
-#: src/site/Header.tsx
-msgid "kurra, back to the top"
-msgstr ""
-
-#: src/site/SetupTabs.tsx
-msgid "Your token goes where the client keeps credentials. kurra shows a token once, when you create it."
+#: src/site/Hero.tsx
+msgid "Point your package managers at Kurra, a caching pull-through gateway for {count, plural, one {# ecosystem} other {# ecosystems}}. Each package is checked against advisories, package licenses, and a reputation check, and the decision is recorded with its reason."
 msgstr ""
 
 #: src/site/Setup.tsx
@@ -301,6 +293,10 @@ msgstr ""
 
 #: src/site/Compliance.tsx
 msgid "Flags a package name that looks like a typosquat of a popular one, before the package is fetched."
+msgstr ""
+
+#: src/site/Hosting.tsx
+msgid "Use Kurra cloud, or run Kurra yourself"
 msgstr ""
 
 #: src/site/Setup.tsx
@@ -335,6 +331,14 @@ msgstr ""
 msgid "Advisory <0>{advisory}</0>, critical. Fixed in <1>{fixed}</1>."
 msgstr ""
 
+#: src/site/Header.tsx
+msgid "Kurra, back to the top"
+msgstr ""
+
+#: src/site/meta.ts
+msgid "Point your package managers at Kurra. Every package is Allowed or Blocked, and the reason is recorded."
+msgstr ""
+
 #: src/site/Ecosystems.tsx
 msgid "{count, plural, one {# ecosystem, one gateway} other {# ecosystems, one gateway}}"
 msgstr ""
@@ -351,8 +355,8 @@ msgstr ""
 msgid "Primary"
 msgstr ""
 
-#: src/site/meta.ts
-msgid "kurra: a caching gateway for package registries"
+#: src/site/SetupTabs.tsx
+msgid "Your token goes where the client keeps credentials. Kurra shows a token once, when you create it."
 msgstr ""
 
 #: src/site/Compliance.tsx
@@ -379,12 +383,8 @@ msgstr ""
 msgid "Separate tenants"
 msgstr ""
 
-#: src/site/Compliance.tsx
-msgid "Set an SPDX allow or deny list. This covers npm, PyPI, Cargo, Go, Maven, and NuGet. A license kurra can’t read is allowed, not blocked."
-msgstr ""
-
-#: src/site/Hero.tsx
-msgid "Point your package managers at kurra, a caching pull-through gateway for {count, plural, one {# ecosystem} other {# ecosystems}}. Each package is checked against advisories, package licenses, and a reputation check, and the decision is recorded with its reason."
+#: src/site/Hosting.tsx
+msgid "Each tenant configures its own S3-compatible bucket. Kurra has none of its own."
 msgstr ""
 
 #: src/site/Ecosystems.tsx
@@ -395,14 +395,14 @@ msgstr ""
 msgid "Activity"
 msgstr ""
 
-#: src/site/Hosting.tsx
-msgid "Use kurra cloud, or run kurra yourself"
-msgstr ""
-
 #: src/site/DecisionStream.tsx
 msgid "Times in UTC"
 msgstr ""
 
 #: src/site/DecisionStream.tsx
 msgid "Decisions in this sample"
+msgstr ""
+
+#: src/site/Compliance.tsx
+msgid "Verifies SLSA provenance from a Sigstore bundle you supply, for packages you host. Kurra stores public keys and never signs anything."
 msgstr ""

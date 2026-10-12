@@ -35,7 +35,7 @@ export function Compliance() {
         <Fact title={<Trans>Package licenses</Trans>}>
           <Trans>
             Set an SPDX allow or deny list. This covers npm, PyPI, Cargo, Go, Maven, and NuGet. A
-            license kurra can’t read is allowed, not blocked.
+            license Kurra can’t read is allowed, not blocked.
           </Trans>
         </Fact>
         <Fact title={<Trans>Reputation check</Trans>}>
@@ -51,7 +51,7 @@ export function Compliance() {
         </Fact>
         <Fact title={<Trans>Provenance</Trans>}>
           <Trans>
-            Verifies SLSA provenance from a Sigstore bundle you supply, for packages you host. kurra
+            Verifies SLSA provenance from a Sigstore bundle you supply, for packages you host. Kurra
             stores public keys and never signs anything.
           </Trans>
         </Fact>

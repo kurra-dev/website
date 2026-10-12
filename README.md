@@ -1,7 +1,7 @@
-# kurra website
+# Kurra website
 
-The public landing page. A static site on the same stack as the kurra console: Vite, React 19, TypeScript, Tailwind CSS v4,
-Radix UI, Lingui and Vitest. It uses the kurra design system tokens and follows the kurra content standard.
+The public landing page. A static site on the same stack as the Kurra console: Vite, React 19, TypeScript, Tailwind CSS v4,
+Radix UI, Lingui and Vitest. It uses the Kurra design system tokens and follows the Kurra content standard.
 
 ```sh
 npm install
@@ -32,12 +32,12 @@ settings.
 | `src/styles.css`        | Marketing styles built on the tokens. Bands set `data-theme`, so ink sections use the dark tokens and paper sections the light ones                 |
 | `src/lib/i18n/`         | The same thin layer over Lingui as the console, adapted for prerendered pages                                                                       |
 | `src/locales/`          | The catalogs. `en-XA` is the pseudo-locale; load the page with `?locale=en-XA` to find hardcoded strings and overflow                               |
-| `src/site/config.ts`    | The GitHub link behind every "View kurra on GitHub" button, and the sample hostnames used in the client snippets                                    |
+| `src/site/config.ts`    | The GitHub link behind every "View Kurra on GitHub" button, and the sample hostnames used in the client snippets                                    |
 
 ## Writing rules
 
 - Copy follows `kurra/web/COPY.md` and the glossary (`kurra/contributing/glossary.md`): sentence case, "decision" not
-  "verdict", "mirror" not "proxy", "kurra" always lowercase, no claim the product can't back. `src/copy.test.ts` enforces
+  "verdict", "mirror" not "proxy", "Kurra" with a capital K (code names stay lowercase), no claim the product can't back. `src/copy.test.ts` enforces
   the rules a test can check.
 - Every sentence goes through the macros (`<Trans>`, `t`, `<Plural>`), one message per sentence, so it can be translated.
   Code samples, package names, versions, advisory identifiers and raw client output are not translated.

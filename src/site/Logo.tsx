@@ -1,5 +1,7 @@
 import { useId } from "react";
 
+import { PRODUCT_NAME } from "./config";
+
 /** The mark: a lowercase "k" whose diagonal is cut by a horizontal notch (the gate). One color, `currentColor`. */
 export function LogoMark({ size = 24 }: { size?: number }) {
   const mask = useId();
@@ -35,7 +37,7 @@ export function Logo({ size = 24 }: { size?: number }) {
   return (
     <span className="logo">
       <LogoMark size={size} />
-      <span className="logo-word">kurra</span>
+      <span className="logo-word">{PRODUCT_NAME}</span>
     </span>
   );
 }

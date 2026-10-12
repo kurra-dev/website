@@ -1,3 +1,6 @@
+/** The product name. A proper noun, so it is never translated. */
+export const PRODUCT_NAME = "Kurra";
+
 /** The repository. It is private for now and will be public. */
 export const GITHUB_HREF = "https://github.com/kurra-dev/kurra";
 

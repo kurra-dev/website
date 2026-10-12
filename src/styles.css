@@ -6,7 +6,7 @@
 @import "@fontsource/geist-mono/400.css";
 @import "@fontsource/geist-mono/500.css";
 
-/* kurra design tokens (design-system/generated/COMPONENT_SPEC_TOKENS.css). Bands set data-theme, so tokens follow. */
+/* Kurra design tokens (design-system/generated/COMPONENT_SPEC_TOKENS.css). Bands set data-theme, so tokens follow. */
 @import "./styles/tokens.css";
 
 /*

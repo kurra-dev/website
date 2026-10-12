@@ -10,7 +10,7 @@ export function Header() {
   return (
     <header className="topbar" data-theme="dark">
       <div className="topbar-inner">
-        <a href="#top" className="topbar-logo" aria-label={t`kurra, back to the top`}>
+        <a href="#top" className="topbar-logo" aria-label={t`Kurra, back to the top`}>
           <Logo />
         </a>
         <nav className="topbar-nav" aria-label={t`Primary`}>

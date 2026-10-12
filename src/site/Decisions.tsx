@@ -12,7 +12,7 @@ export function Decisions() {
         title={<Trans>Two decisions, each with a reason</Trans>}
         lead={
           <Trans>
-            Every package version is Allowed or Blocked. kurra records what decided and why, so the
+            Every package version is Allowed or Blocked. Kurra records what decided and why, so the
             person whose build stopped can read the rule that stopped it.
           </Trans>
         }
@@ -33,7 +33,7 @@ export function Decisions() {
         <article className="tile">
           <DecisionPill decision="blocked" />
           <h3 className="h3">
-            <Trans>kurra refuses to serve it</Trans>
+            <Trans>Kurra refuses to serve it</Trans>
           </h3>
           <p>
             <Trans>

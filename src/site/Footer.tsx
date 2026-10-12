@@ -16,7 +16,7 @@ export function Footer() {
           <Trans>A caching gateway for package registries.</Trans>
         </p>
         <p className="footer-copy mono">
-          <Trans>© {year} kurra</Trans>
+          <Trans>© {year} Kurra</Trans>
         </p>
         <LocalePicker />
       </div>

@@ -21,7 +21,7 @@ export function Hero() {
         </h1>
         <p className="lead">
           <Trans>
-            Point your package managers at kurra, a caching pull-through gateway for{" "}
+            Point your package managers at Kurra, a caching pull-through gateway for{" "}
             <Plural value={count} one="# ecosystem" other="# ecosystems" />. Each package is checked
             against advisories, package licenses, and a reputation check, and the decision is
             recorded with its reason.
@@ -29,7 +29,7 @@ export function Hero() {
         </p>
         <div className="actions">
           <a className="btn btn-primary btn-lg" href={GITHUB_HREF}>
-            <Trans>View kurra on GitHub</Trans>
+            <Trans>View Kurra on GitHub</Trans>
           </a>
           <a className="link-ghost" href="#setup">
             <Trans>See the client setup</Trans>

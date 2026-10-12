@@ -4,7 +4,7 @@ import path from "node:path";
 import { describe, expect, it } from "vitest";
 
 // A subset of the content standard that a test can enforce: the banned characters and words, the product's retired
-// terms, and "kurra" always in lowercase. Everything else in the standard still needs a human review.
+// terms, and "Kurra" always with a capital K. Everything else in the standard still needs a human review.
 
 function sourceMessages(): string[] {
   const po = readFileSync(path.join(import.meta.dirname, "locales/en/messages.po"), "utf8");
@@ -46,7 +46,10 @@ describe("copy standard", () => {
       "a retired term (verdict, proxy, quarantine, scanned, safe)",
       /\b(verdicts?|proxy|quarantin\w*|scanned|scanning|safe)\b/i,
     ],
-    ["a capitalized product name", /\bKurra\b|\bKURRA\b/],
+    [
+      "a product name without a capital K, or in capitals",
+      /(?<![\w/_.-])kurra(?![\w/-])|\bKURRA\b/,
+    ],
     ["a Latin abbreviation", /\b(e\.g\.|i\.e\.|etc\.)/i],
   ];
 

@@ -14,7 +14,7 @@ export function Setup() {
             lead={
               <Trans>
                 Package managers keep working the way they do today. You change the address they
-                use, and kurra serves what the upstream has, after checking it.
+                use, and Kurra serves what the upstream has, after checking it.
               </Trans>
             }
           />

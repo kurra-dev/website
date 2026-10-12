@@ -8,7 +8,7 @@ export function Hosting() {
     <Section id="hosting" tone="ink" labelledBy="hosting-title">
       <SectionHead
         id="hosting-title"
-        title={<Trans>Use kurra cloud, or run kurra yourself</Trans>}
+        title={<Trans>Use Kurra cloud, or run Kurra yourself</Trans>}
         lead={
           <Trans>
             Either way, your packages live in a storage bucket you own, and each tenant stays
@@ -23,7 +23,7 @@ export function Hosting() {
           </h3>
           <p>
             <Trans>
-              Each tenant configures its own S3-compatible bucket. kurra has none of its own.
+              Each tenant configures its own S3-compatible bucket. Kurra has none of its own.
             </Trans>
           </p>
         </article>
@@ -32,7 +32,7 @@ export function Hosting() {
             <Trans>Self-hosted</Trans>
           </h3>
           <p>
-            <Trans>Run kurra with Docker Compose or a Helm chart, inside your own network.</Trans>
+            <Trans>Run Kurra with Docker Compose or a Helm chart, inside your own network.</Trans>
           </p>
         </article>
         <article className="tile">
@@ -57,7 +57,7 @@ export function Hosting() {
           <Trans>Find the code, the documentation, and the latest changes on GitHub.</Trans>
         </p>
         <a className="btn btn-primary btn-lg" href={GITHUB_HREF}>
-          <Trans>View kurra on GitHub</Trans>
+          <Trans>View Kurra on GitHub</Trans>
         </a>
       </div>
     </Section>

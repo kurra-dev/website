@@ -127,7 +127,7 @@ function CopyButton({ text }: { text: string }) {
   );
 }
 
-/** Switching an ecosystem to kurra is a few lines. One tab per client, real configuration. */
+/** Switching an ecosystem to Kurra is a few lines. One tab per client, real configuration. */
 export function SetupTabs() {
   const { t } = useLingui();
   return (
@@ -169,7 +169,7 @@ export function SetupTabs() {
       ))}
       <p className="code-note">
         <Trans>
-          Your token goes where the client keeps credentials. kurra shows a token once, when you
+          Your token goes where the client keeps credentials. Kurra shows a token once, when you
           create it.
         </Trans>
       </p>
