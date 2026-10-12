@@ -1,0 +1,212 @@
+/* kurra design tokens. Source: design-system/VISUAL_IDENTITY.md section 16, plus amendments and additions from design-system/generated/COMPONENT_SPEC.md section 7.
+   Token blocks bind to :root AND to any element carrying data-theme, so a light pane and a dark pane can sit side by side on one page. */
+
+:root, [data-theme="light"] {
+  color-scheme: light;
+  /* neutrals */
+  --bg-canvas:#F6F7F9; --bg-surface:#FFFFFF; --bg-raised:#FFFFFF; --bg-subtle:#EEF0F4; --bg-inset:#E9ECF1;
+  --border-default:#D9DDE5; --border-strong:#8791A3;
+  --fg-default:#14171F; --fg-muted:#4F5A6C;
+  --fg-subtle:#5B667A;            /* AMENDED (was #687387): passes 4.5:1 on every surface */
+  /* brand (interaction only) */
+  --brand:#0A6F82; --brand-hover:#085C6C; --brand-tint:#E7F1F3; --brand-row:#EEF5F6; --on-brand:#FFFFFF;
+  /* verdicts */
+  --verdict-allow:#17703D;      --verdict-allow-bg:#E3EEE8;
+  --verdict-quarantine:#8A5200; --verdict-quarantine-bg:#EFE7DB;
+  --verdict-block:#B42323;      --verdict-block-bg:#F8E9E9;
+  --verdict-scan:#3F495A;       --verdict-scan-bg:#E9ECF1;
+  /* diff */
+  --diff-add-bg:#E8F1EC; --diff-remove-bg:#F9EDED;
+  /* ADDITIONS: color */
+  --danger-solid:#B42323; --on-danger:#FFFFFF;
+  --danger-solid-hover:#9B1C1C;   /* hover and active of the solid danger button: 8.15:1 with --on-danger */
+  --scrim:rgba(11,14,20,.48);
+  --fg-disabled:#98A2B3; --bg-disabled:#EEF0F4; --border-disabled:#D9DDE5;
+  --tooltip-bg:#1B212C; --tooltip-fg:#F6F7F9;
+  --skeleton-base:#EEF0F4; --skeleton-shine:#E1E5EC;
+  --syn-keyword:#7A3AB8; --syn-string:#9A4A00; --syn-number:#1D5FD1; --syn-comment:#59657A; --syn-func:#245F8F; --syn-default:#14171F;
+  --shadow-menu:0 8px 24px rgba(11,14,20,.12);
+  --shadow-dialog:0 16px 48px rgba(11,14,20,.20);
+  --match-bg:#FCEFC0;              /* search-match highlight; text stays --fg-default (15.57:1 light, 8.67:1 dark) */
+  --border-control:var(--border-strong);
+  --border-strong-subtle:#7A8497;   /* control edge on --bg-subtle or --bg-inset: 3.30 / 3.18 */
+  --bg-row-hover:#F5F6F8;
+  --diff-add-word:#BFDDCC; --diff-remove-word:#F1C9C9;
+  --chart-3:#6A4FD0;
+  --shadow-sticky:0 2px 4px rgba(11,14,20,.08);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg-canvas:#0B0E14; --bg-surface:#11151D; --bg-raised:#171C26; --bg-subtle:#1B212C; --bg-inset:#070A0F;
+    --border-default:#262D3A; --border-strong:#66718A;   /* AMENDED (was #5A6479): 3:1 on every neutral dark surface */
+    --fg-default:#E7EAF0; --fg-muted:#98A2B3; --fg-subtle:#909AAD;   /* AMENDED (was #7B8598) */
+    --brand:#4FC3D9; --brand-hover:#7AD6E7; --brand-tint:#1B313B; --brand-row:#172630; --on-brand:#06141A;
+    --verdict-allow:#3DD68C;      --verdict-allow-bg:#18342F;
+    --verdict-quarantine:#F5B944; --verdict-quarantine-bg:#352F23;
+    --verdict-block:#FF7B72;      --verdict-block-bg:#37252B;
+    --verdict-scan:#B4BCCB;       --verdict-scan-bg:#232A37;
+    --diff-add-bg:#122A25; --diff-remove-bg:#2D1D21;
+    --danger-solid:#FF7B72; --on-danger:#2A0A08; --danger-solid-hover:#FF9A93;   /* 8.99:1 with --on-danger */
+    --scrim:rgba(0,0,0,.64);
+    --fg-disabled:#566074; --bg-disabled:#1B212C; --border-disabled:#262D3A;
+    --tooltip-bg:#E7EAF0; --tooltip-fg:#0B0E14;
+    --skeleton-base:#1B212C; --skeleton-shine:#262D3A;
+    --syn-keyword:#C5A2F5; --syn-string:#F0A868; --syn-number:#78A9FF; --syn-comment:#7B8598; --syn-func:#7FB8E6; --syn-default:#E7EAF0;
+    --shadow-menu:0 8px 24px rgba(0,0,0,.5);
+    --shadow-dialog:0 16px 48px rgba(0,0,0,.6);
+    --match-bg:#4A3F12;
+    --border-control:var(--border-strong);
+    --border-strong-subtle:#66718A;
+    --bg-row-hover:#171C26;
+    --diff-add-word:#1F5A45; --diff-remove-word:#6B2E36;
+    --chart-3:#A48CFF;
+    --shadow-sticky:0 2px 4px rgba(0,0,0,.4);
+  }
+}
+:root[data-theme="dark"], [data-theme="dark"] {
+  color-scheme: dark;
+  --bg-canvas:#0B0E14; --bg-surface:#11151D; --bg-raised:#171C26; --bg-subtle:#1B212C; --bg-inset:#070A0F;
+  --border-default:#262D3A; --border-strong:#66718A;   /* AMENDED (was #5A6479): 3:1 on every neutral dark surface */
+  --fg-default:#E7EAF0; --fg-muted:#98A2B3; --fg-subtle:#909AAD;
+  --brand:#4FC3D9; --brand-hover:#7AD6E7; --brand-tint:#1B313B; --brand-row:#172630; --on-brand:#06141A;
+  --verdict-allow:#3DD68C;      --verdict-allow-bg:#18342F;
+  --verdict-quarantine:#F5B944; --verdict-quarantine-bg:#352F23;
+  --verdict-block:#FF7B72;      --verdict-block-bg:#37252B;
+  --verdict-scan:#B4BCCB;       --verdict-scan-bg:#232A37;
+  --diff-add-bg:#122A25; --diff-remove-bg:#2D1D21;
+  --danger-solid:#FF7B72; --on-danger:#2A0A08; --danger-solid-hover:#FF9A93;   /* 8.99:1 with --on-danger */
+  --scrim:rgba(0,0,0,.64);
+  --fg-disabled:#566074; --bg-disabled:#1B212C; --border-disabled:#262D3A;
+  --tooltip-bg:#E7EAF0; --tooltip-fg:#0B0E14;
+  --skeleton-base:#1B212C; --skeleton-shine:#262D3A;
+  --syn-keyword:#C5A2F5; --syn-string:#F0A868; --syn-number:#78A9FF; --syn-comment:#7B8598; --syn-func:#7FB8E6; --syn-default:#E7EAF0;
+  --shadow-menu:0 8px 24px rgba(0,0,0,.5);
+  --shadow-dialog:0 16px 48px rgba(0,0,0,.6);
+  --match-bg:#4A3F12;
+  --border-control:var(--border-strong);
+  --border-strong-subtle:#66718A;
+  --bg-row-hover:#171C26;
+  --diff-add-word:#1F5A45; --diff-remove-word:#6B2E36;
+  --chart-3:#A48CFF;
+  --shadow-sticky:0 2px 4px rgba(0,0,0,.4);
+}
+
+/* Theme-independent tokens */
+:root {
+  --font-sans:"Geist",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --font-mono:"Geist Mono",ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+  /* type scale */
+  --t-page:600 24px/32px var(--font-sans);   --t-section:600 18px/26px var(--font-sans);
+  --t-sub:600 16px/24px var(--font-sans);    --t-body:400 14px/20px var(--font-sans);
+  --t-body-strong:600 14px/20px var(--font-sans); --t-small:400 12px/16px var(--font-sans);
+  --t-overline:600 11px/16px var(--font-sans); --t-mono:400 13px/20px var(--font-mono); --t-mono-small:400 12px/16px var(--font-mono);
+  /* space (4px base) */
+  --space-1:4px; --space-2:8px; --space-3:12px; --space-4:16px; --space-5:20px; --space-6:24px; --space-8:32px; --space-10:40px; --space-12:48px; --space-16:64px;
+  /* shape */
+  --radius-control:6px; --radius-panel:8px; --radius-dialog:12px; --radius-pill:9999px; --radius-sm:4px;
+  /* density: comfortable is the product default; compact is opted into per data surface */
+  --control-h:32px; --row-h:44px; --row-h2:64px; --pad-x:12px;
+  /* sizes */
+  --topbar-h:48px; --rail-w:56px; --menu-w:212px; --flyout-w:224px; --drawer-w:480px; --drawer-w-sm:360px;
+  --dialog-sm:400px; --dialog-md:480px; --dialog-lg:640px; --form-max:640px; --content-max:1600px; --toast-w:360px; --popover-max:360px;
+  --target-touch:44px; --target-min:24px;
+  /* layers */
+  --z-base:0; --z-sticky:100; --z-topbar:200; --z-sidebar:210; --z-menu:300; --z-scrim:400; --z-drawer:410; --z-dialog:420; --z-dialog-menu:430; --z-toast:600; --z-tooltip:700;
+  /* motion */
+  --dur-fast:100ms; --dur-base:140ms; --dur-slow:180ms; --dur-flash:200ms; --ease-out:cubic-bezier(.2,.8,.2,1); --ease-std:ease-out;
+  /* focus */
+  --focus-w:2px; --focus-offset:2px;
+  /* ADOPTED from component groups */
+  --link-ul-w:1px; --link-ul-w-hover:2px; --btn-min-w:64px;
+  --tooltip-max:280px; --meter-h:6px;
+  --menu-drawer-w:280px; --tabbar-h:40px; --rail-item-w:40px; --rail-item-h:36px; --dur-collapse:160ms; --stepper-node:24px; --anchor-w:200px;
+  --radius-sheet:16px;
+  --detail-gap:24px; --detail-sidebar-max:420px; --detail-split:7fr 3fr; --sticky-cap:40; --master-w:360px; --split-min:1280px;
+  /* log viewer: dark inset in both themes (G-09) */
+  --log-bg:#070A0F; --log-fg:#E7EAF0; --log-ts:#909AAD; --log-info:#7FB8E6; --log-warn:#F5B944; --log-err:#FF7B72; --log-ok:#3DD68C;
+  --log-accent:#4FC3D9; --log-match-bg:#4A3F12; --log-line-hover:#11151D; --log-line-sel:#172630; --log-ts-w:calc(13ch + 12px);
+  /* ADOPTED from primitives (Anchored overlay, Overlay stack, Tooltip, Skeleton) */
+  --overlay-offset:4px; --overlay-margin:8px; --overlay-flip-min:200px; --sheet-max-h:60dvh; --overlay-bottom-inset:0px;
+  --tooltip-delay:500ms; --tooltip-skip:300ms; --skeleton-delay:300ms; --skeleton-min:500ms;
+  --lvr-settle:100ms; --lvr-gap:500ms; --lvr-dedupe:1000ms; --lvr-clear:5000ms;
+  /* high-contrast hooks: 0 by default */
+  --pill-bd:0px;
+
+  /* R-39 additions. Heights that follow density and pointer are re-declared in the density and coarse blocks below. */
+  --sticky-top:var(--topbar-h);                       /* offset of sticky regions from the top of the page (below the top bar) */
+  --head-h:36px; --panel-header-h:48px; --panel-footer-h:44px; --card-min-h:72px; --row-desc-h:48px;   /* table header row, panel strip, panel footer, card, row with a description */
+  --dropzone-h:120px;
+  --count-h:18px; --menu-link-h:28px; --overlay-min-h:120px;
+  --kbd-h:18px; --kbd-h-lg:22px;                      /* Kbd chip heights */
+  --switch-w:32px; --switch-h:20px; --switch-thumb:14px;
+  --slider-track-h:6px; --slider-thumb:16px; --slider-thumb-drag:20px; --slider-hit:24px;
+  /* additional type styles (whole-font shorthand, same trap as the others) */
+  --t-kbd:500 11px/16px var(--font-mono); --t-kbd-lg:500 12px/16px var(--font-mono);
+  --t-crumb:400 13px/20px var(--font-sans);           /* 13/20: breadcrumbs, menu sub-links */
+  --t-input-lg:400 16px/24px var(--font-sans);        /* input text at 16px so iOS does not zoom */
+  --t-input:var(--t-body);                            /* 16px on coarse pointers (below) */
+  /* widths */
+  --field-min:160px; --field-max-compact:360px; --search-min:200px; --search-max:360px;
+  --flash-bg:var(--brand-tint); --progress-fill:var(--brand);   /* G-11 non-status brand uses: live-insert flash, job progress fill */
+  --dtp-tier3-max:240px;                               /* date picker summary: third tier under this width (176px minimum) */
+  --affix-max-w:96px; --popover-min:200px; --panel-min-w:280px; --wizard-steps-w:240px; --settings-control-min:240px; --settings-control-max:360px;
+  --toolbar-search-basis:240px; --toolbar-search-min:200px; --toolbar-search-max:360px;
+  --toolbar-filter-min:96px; --toolbar-filter-max:200px; --toolbar-hint-min:240px;
+  /* spinner and indeterminate durations: not zeroed by reduced motion, the components switch to the reduced value */
+  --dur-spin:900ms; --dur-spin-reduced:2400ms; --dur-indeterminate:1600ms;
+  /* env() safe areas, read by pt-safe, pb-safe, px-safe */
+  --safe-t:env(safe-area-inset-top,0px); --safe-b:env(safe-area-inset-bottom,0px); --safe-l:env(safe-area-inset-left,0px); --safe-r:env(safe-area-inset-right,0px);
+}
+[data-density="compact"] {
+  --control-h:28px; --row-h:36px; --row-h2:52px; --pad-x:8px;
+  --head-h:32px; --panel-header-h:40px; --panel-footer-h:40px; --card-min-h:64px; --row-desc-h:40px; --dropzone-h:96px;
+  --switch-w:28px; --switch-h:16px; --switch-thumb:10px; --slider-track-h:4px; --slider-thumb:14px;
+  --stepper-w:120px;                                  /* numeric stepper total, gaps excluded from the input, D-61 */
+}
+[data-density="comfortable"] {
+  --control-h:32px; --row-h:44px; --row-h2:64px; --pad-x:12px;
+  --head-h:36px; --panel-header-h:48px; --panel-footer-h:44px; --card-min-h:72px; --row-desc-h:48px; --dropzone-h:120px;
+  --switch-w:32px; --switch-h:20px; --switch-thumb:14px; --slider-track-h:6px; --slider-thumb:16px;
+  --stepper-w:136px;
+}
+@media (pointer: coarse) {
+  :root, [data-density] {
+    --control-h:44px; --row-h:52px; --row-h2:64px;   /* 52 = 44px target + 8px (G-85, D-21) */
+    --head-h:44px; --panel-header-h:52px; --panel-footer-h:52px; --card-min-h:72px; --row-desc-h:56px;
+    --menu-link-h:var(--target-touch);
+    --switch-w:40px; --switch-h:24px; --switch-thumb:18px; --slider-track-h:8px; --slider-thumb:20px; --slider-hit:var(--target-touch); --stepper-w:160px;
+    --t-input:var(--t-input-lg);
+  }
+}
+
+/* high contrast preference (and explicit toggle) */
+:root[data-contrast="more"], [data-contrast="more"] { --border-default:var(--border-strong); --pill-bd:1px; --focus-w:3px; }
+@media (prefers-contrast: more) { :root { --border-default:var(--border-strong); --pill-bd:1px; --focus-w:3px; } }
+
+/* forced colors: the browser replaces author colors with system colors, so meaning is carried by glyph, label, border and outline (G-08, G-29).
+   Tokens are remapped to system colors so that anything opting out with forced-color-adjust:none (marks, dots, thumbs, scrims, selected fills) still resolves to a legal palette.
+   Specificity is :root:root / [data-theme][data-theme] (0,2,0) and the block comes last, so it beats the light, dark and prefers-color-scheme blocks above. Verified in tokentest/fc. */
+@media (forced-colors: active) {
+  :root:root, [data-theme][data-theme] {
+    --focus-w:3px; --pill-bd:1px;
+    --bg-canvas:Canvas; --bg-surface:Canvas; --bg-raised:Canvas; --bg-subtle:Canvas; --bg-inset:Canvas;
+    --border-default:ButtonBorder; --border-strong:ButtonBorder; --border-control:ButtonBorder; --border-strong-subtle:ButtonBorder;
+    --fg-default:CanvasText; --fg-muted:CanvasText; --fg-subtle:CanvasText;
+    --brand:Highlight; --brand-hover:Highlight; --brand-tint:Canvas; --brand-row:Canvas; --on-brand:HighlightText;
+    --verdict-allow:CanvasText; --verdict-quarantine:CanvasText; --verdict-block:CanvasText; --verdict-scan:CanvasText;
+    --verdict-allow-bg:Canvas; --verdict-quarantine-bg:Canvas; --verdict-block-bg:Canvas; --verdict-scan-bg:Canvas;
+    --danger-solid:ButtonText; --on-danger:ButtonFace; --danger-solid-hover:ButtonText;
+    --fg-disabled:GrayText; --bg-disabled:Canvas; --border-disabled:GrayText;
+    --tooltip-bg:Canvas; --tooltip-fg:CanvasText;
+    --syn-keyword:CanvasText; --syn-string:CanvasText; --syn-number:CanvasText; --syn-comment:GrayText; --syn-func:CanvasText; --syn-default:CanvasText;
+    --diff-add-bg:Canvas; --diff-remove-bg:Canvas; --diff-add-word:Canvas; --diff-remove-word:Canvas;
+    --match-bg:Mark; --flash-bg:Canvas; --progress-fill:Highlight;
+    --skeleton-base:GrayText; --skeleton-shine:GrayText;
+    --log-bg:Canvas; --log-fg:CanvasText; --log-ts:GrayText; --log-info:CanvasText; --log-warn:CanvasText; --log-err:CanvasText; --log-ok:CanvasText;
+    --log-accent:Highlight; --log-match-bg:Mark; --log-line-hover:Canvas; --log-line-sel:Canvas;
+    --bg-row-hover:Canvas; --chart-3:CanvasText;
+    --shadow-menu:none; --shadow-dialog:none; --shadow-sticky:none;
+  }
+}
+@media (prefers-reduced-motion: reduce) { :root { --dur-fast:0ms; --dur-base:0ms; --dur-slow:0ms; --dur-flash:0ms; --dur-collapse:0ms; } }

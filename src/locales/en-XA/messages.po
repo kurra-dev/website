@@ -1,0 +1,408 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2026-10-12 19:17+1100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: en-XA\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: src/site/Compliance.tsx
+msgid "Software bill of materials"
+msgstr ""
+
+#: src/site/Hosting.tsx
+msgid "Registries, tokens, roles, usage, and activity belong to one tenant, a team or business unit inside your organization."
+msgstr ""
+
+#: src/site/SetupTabs.tsx
+msgid "Client"
+msgstr ""
+
+#: src/site/Compliance.tsx
+msgid "Activity and audit log"
+msgstr ""
+
+#: src/site/Hosting.tsx
+msgid "Storage you own"
+msgstr ""
+
+#: src/site/Footer.tsx
+msgid "A caching gateway for package registries."
+msgstr ""
+
+#: src/site/samples.tsx
+msgid "Reputation check: the name resembles <0>{popular}</0>."
+msgstr ""
+
+#: src/site/DecisionPill.tsx
+#: src/site/DecisionStream.tsx
+msgid "Blocked"
+msgstr ""
+
+#: src/site/Compliance.tsx
+msgid "Verifies SLSA provenance from a Sigstore bundle you supply, for packages you host. kurra stores public keys and never signs anything."
+msgstr ""
+
+#: src/site/Compliance.tsx
+msgid "Each decision is recorded with what decided, when, and why. The audit log behind it is tamper-evident and can be exported on the Enterprise plan."
+msgstr ""
+
+#: src/site/Decisions.tsx
+msgid "People can also allow or block a package by hand. A manual decision never expires, and only a person can clear it."
+msgstr ""
+
+#: src/site/meta.ts
+msgid "Point your package managers at kurra. Every package is Allowed or Blocked, and the reason is recorded."
+msgstr ""
+
+#: src/site/Access.tsx
+msgid "An organization owns its tenants, and its settings win over theirs."
+msgstr ""
+
+#: src/site/Decisions.tsx
+msgid "A reason in the terminal, not a mystery"
+msgstr ""
+
+#: src/site/Hosting.tsx
+msgid "Find the code, the documentation, and the latest changes on GitHub."
+msgstr ""
+
+#: src/site/Header.tsx
+msgid "Ecosystems"
+msgstr ""
+
+#: src/site/Hero.tsx
+msgid "See the client setup"
+msgstr ""
+
+#: src/site/Hosting.tsx
+msgid "Self-hosted"
+msgstr ""
+
+#: src/site/Access.tsx
+msgid "Tokens"
+msgstr ""
+
+#: src/site/SetupTabs.tsx
+msgid "Copied"
+msgstr ""
+
+#: src/site/Access.tsx
+msgid "Name"
+msgstr ""
+
+#: src/site/Footer.tsx
+msgid "© {year} kurra"
+msgstr ""
+
+#: src/site/DecisionStream.tsx
+msgid "Resume updates"
+msgstr ""
+
+#: src/routes/not-found.tsx
+#: src/site/meta.ts
+msgid "Page not found"
+msgstr ""
+
+#: src/site/Access.tsx
+msgid "Permissions"
+msgstr ""
+
+#: src/site/Access.tsx
+msgid "A CI job can exchange its own identity for a short-lived token, with no stored secret. This needs the Enterprise plan."
+msgstr ""
+
+#: src/site/Compliance.tsx
+msgid "Advisories, package licenses, software bills of materials, provenance, and an audit log sit next to the cache, not in a separate tool."
+msgstr ""
+
+#: src/site/Decisions.tsx
+msgid "The message your package manager prints leads with the outcome, names the rule, and says what to do next."
+msgstr ""
+
+#: src/site/samples.tsx
+msgid "Blocked by an administrator. Clients can’t install it."
+msgstr ""
+
+#: src/site/Access.tsx
+#: src/site/DecisionStream.tsx
+msgid "Sample data"
+msgstr ""
+
+#: src/site/Decisions.tsx
+msgid "The reason names the cause, such as an advisory, a license, or an administrator. Clients get an error that names the rule and points to a way forward."
+msgstr ""
+
+#: src/site/Hero.tsx
+#: src/site/Hosting.tsx
+msgid "View kurra on GitHub"
+msgstr ""
+
+#: src/site/Access.tsx
+msgid "A token is shown once, when you create it, and is hashed afterward."
+msgstr ""
+
+#: src/site/Hero.tsx
+msgid "Every package gets a decision before it reaches your build"
+msgstr ""
+
+#: src/site/Header.tsx
+msgid "Hosting"
+msgstr ""
+
+#: src/site/Compliance.tsx
+msgid "Compliance records, built in"
+msgstr ""
+
+#: src/site/Ecosystems.tsx
+msgid "Tokens, roles, and activity work the same way in every ecosystem. Advisory and license checks apply where the ecosystem has the data for them."
+msgstr ""
+
+#: src/site/Setup.tsx
+msgid "A hosted registry serves the packages your teams publish. It needs the Enterprise plan."
+msgstr ""
+
+#: src/site/SetupTabs.tsx
+msgid "Copy"
+msgstr ""
+
+#: src/site/Decisions.tsx
+msgid "Nothing stopped it"
+msgstr ""
+
+#: src/site/Setup.tsx
+msgid "A token holds only the permissions and reaches only the registries you choose."
+msgstr ""
+
+#: src/site/samples.tsx
+msgid "No matching advisory. License <0>{license}</0> is allowed."
+msgstr ""
+
+#: src/site/Access.tsx
+msgid "Registries"
+msgstr ""
+
+#: src/site/Header.tsx
+msgid "View on GitHub"
+msgstr ""
+
+#: src/site/Setup.tsx
+msgid "Package managers keep working the way they do today. You change the address they use, and kurra serves what the upstream has, after checking it."
+msgstr ""
+
+#: src/site/Access.tsx
+msgid "Last used"
+msgstr ""
+
+#: src/site/Access.tsx
+msgid "All registries"
+msgstr ""
+
+#: src/site/DecisionPill.tsx
+#: src/site/DecisionStream.tsx
+msgid "Allowed"
+msgstr ""
+
+#: src/site/Decisions.tsx
+msgid "kurra refuses to serve it"
+msgstr ""
+
+#: src/site/Hosting.tsx
+msgid "Each tenant configures its own S3-compatible bucket. kurra has none of its own."
+msgstr ""
+
+#: src/site/Compliance.tsx
+msgid "Which checks are included depends on your plan."
+msgstr ""
+
+#: src/site/Access.tsx
+msgid "Expires"
+msgstr ""
+
+#: src/routes/not-found.tsx
+msgid "That page can’t be found. It may have moved."
+msgstr ""
+
+#: src/site/Header.tsx
+msgid "Decisions"
+msgstr ""
+
+#: src/site/DecisionStream.tsx
+msgid "Pause updates"
+msgstr ""
+
+#: src/site/Compliance.tsx
+#: src/site/Ecosystems.tsx
+msgid "Advisories"
+msgstr ""
+
+#: src/site/Hosting.tsx
+msgid "Run kurra with Docker Compose or a Helm chart, inside your own network."
+msgstr ""
+
+#: src/site/Decisions.tsx
+msgid "Every package version is Allowed or Blocked. kurra records what decided and why, so the person whose build stopped can read the rule that stopped it."
+msgstr ""
+
+#: src/site/Access.tsx
+msgid "Give each token only what it needs"
+msgstr ""
+
+#: src/site/Compliance.tsx
+msgid "Each version is checked against published advisories from npm and OSV. This covers npm, Go, Cargo, Maven, and NuGet, and PyPI on first pull."
+msgstr ""
+
+#: src/site/Header.tsx
+msgid "Access"
+msgstr ""
+
+#: src/site/SetupTabs.tsx
+msgid "Configuration copied"
+msgstr ""
+
+#: src/site/samples.tsx
+msgid "License <0>{license}</0> is blocked by the license policy."
+msgstr ""
+
+#: src/site/Header.tsx
+msgid "kurra, back to the top"
+msgstr ""
+
+#: src/site/SetupTabs.tsx
+msgid "Your token goes where the client keeps credentials. kurra shows a token once, when you create it."
+msgstr ""
+
+#: src/site/Setup.tsx
+msgid "A mirror fetches a package from its upstream the first time someone asks for it, and keeps a copy."
+msgstr ""
+
+#: src/site/Access.tsx
+msgid "Sign in with GitHub, or with single sign-on on the Enterprise plan. There are no passwords."
+msgstr ""
+
+#: src/site/Compliance.tsx
+msgid "Provenance"
+msgstr ""
+
+#: src/site/Decisions.tsx
+msgid "Either the checks found no reason to stop it, or a person allowed it. Allowed means no rule stopped it. It never means safe."
+msgstr ""
+
+#: src/site/Header.tsx
+msgid "Compliance"
+msgstr ""
+
+#: src/site/Compliance.tsx
+msgid "Flags a package name that looks like a typosquat of a popular one, before the package is fetched."
+msgstr ""
+
+#: src/site/Setup.tsx
+msgid "Switch a client by changing its registry address"
+msgstr ""
+
+#: src/site/Access.tsx
+msgid "A token holds fewer permissions than its owner, never more, and reaches only the registries you choose. It expires after 90 days unless you choose another lifetime."
+msgstr ""
+
+#: src/site/Compliance.tsx
+msgid "Generated in CycloneDX format the first time a Docker or Helm image is cached."
+msgstr ""
+
+#: src/site/Compliance.tsx
+msgid "Package licenses"
+msgstr ""
+
+#: src/routes/not-found.tsx
+msgid "Go to the home page"
+msgstr ""
+
+#: src/site/Header.tsx
+msgid "Setup"
+msgstr ""
+
+#: src/site/Decisions.tsx
+msgid "Two decisions, each with a reason"
+msgstr ""
+
+#: src/site/samples.tsx
+msgid "Advisory <0>{advisory}</0>, critical. Fixed in <1>{fixed}</1>."
+msgstr ""
+
+#: src/site/Ecosystems.tsx
+msgid "{count, plural, one {# ecosystem, one gateway} other {# ecosystems, one gateway}}"
+msgstr ""
+
+#: src/site/Hosting.tsx
+msgid "Either way, your packages live in a storage bucket you own, and each tenant stays separate from the others."
+msgstr ""
+
+#: src/site/Ecosystems.tsx
+msgid "Licenses"
+msgstr ""
+
+#: src/site/Header.tsx
+msgid "Primary"
+msgstr ""
+
+#: src/site/meta.ts
+msgid "kurra: a caching gateway for package registries"
+msgstr ""
+
+#: src/site/Compliance.tsx
+msgid "Reputation check"
+msgstr ""
+
+#: src/site/Hosting.tsx
+msgid "Put a decision in front of every install"
+msgstr ""
+
+#: src/site/Hero.tsx
+msgid "Early access"
+msgstr ""
+
+#: src/site/LocalePicker.tsx
+msgid "Language"
+msgstr ""
+
+#: src/site/Access.tsx
+msgid "Admin, Security manager, Publisher, Reader, and Auditor roles come with every tenant."
+msgstr ""
+
+#: src/site/Hosting.tsx
+msgid "Separate tenants"
+msgstr ""
+
+#: src/site/Compliance.tsx
+msgid "Set an SPDX allow or deny list. This covers npm, PyPI, Cargo, Go, Maven, and NuGet. A license kurra can’t read is allowed, not blocked."
+msgstr ""
+
+#: src/site/Hero.tsx
+msgid "Point your package managers at kurra, a caching pull-through gateway for {count, plural, one {# ecosystem} other {# ecosystems}}. Each package is checked against advisories, package licenses, and a reputation check, and the decision is recorded with its reason."
+msgstr ""
+
+#: src/site/Ecosystems.tsx
+msgid "PyPI advisories are checked on first pull only."
+msgstr ""
+
+#: src/site/DecisionStream.tsx
+msgid "Activity"
+msgstr ""
+
+#: src/site/Hosting.tsx
+msgid "Use kurra cloud, or run kurra yourself"
+msgstr ""
+
+#: src/site/DecisionStream.tsx
+msgid "Times in UTC"
+msgstr ""
+
+#: src/site/DecisionStream.tsx
+msgid "Decisions in this sample"
+msgstr ""

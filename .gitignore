@@ -1,0 +1,10 @@
+node_modules
+dist
+dist-server
+*.local
+*.log
+.DS_Store
+.idea
+.vscode/*
+!.vscode/extensions.json
+src/locales/**/*.js
