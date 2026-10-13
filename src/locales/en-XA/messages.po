@@ -33,6 +33,10 @@ msgstr ""
 msgid "Activity and audit log"
 msgstr ""
 
+#: src/site/feature-data.ts
+msgid "Self-hosted architecture"
+msgstr ""
+
 #: src/site/Ecosystems.tsx
 msgid "Reputation"
 msgstr ""
@@ -78,10 +82,6 @@ msgstr ""
 msgid "The open source version mirrors every supported ecosystem and controls who can pull from it. Enterprise adds the checks that decide what is allowed in."
 msgstr ""
 
-#: src/site/feature-data.ts
-msgid "Admin, Security manager, Publisher, Reader, and Auditor roles"
-msgstr ""
-
 #: src/site/Decisions.tsx
 msgid "People can also allow or block a package by hand. A manual decision never expires, and only a person can clear it."
 msgstr ""
@@ -92,6 +92,14 @@ msgstr ""
 
 #: src/site/Header.tsx
 msgid "Kurra, home page"
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Private network allowlists"
+msgstr ""
+
+#: src/site/Access.tsx
+msgid "Admin, Security, Publisher, Reader, and Auditor roles come with every tenant."
 msgstr ""
 
 #: src/site/Decisions.tsx
@@ -112,10 +120,6 @@ msgstr ""
 
 #: src/site/Hosting.tsx
 msgid "Self-hosted"
-msgstr ""
-
-#: src/site/feature-data.ts
-msgid "Self-hosting with Docker Compose or a Helm chart"
 msgstr ""
 
 #: src/site/Access.tsx
@@ -157,6 +161,10 @@ msgstr ""
 msgid "Covered"
 msgstr ""
 
+#: src/site/feature-data.ts
+msgid "Software bill of materials for container images"
+msgstr ""
+
 #: src/site/Access.tsx
 msgid "Permissions"
 msgstr ""
@@ -179,10 +187,6 @@ msgstr ""
 
 #: src/site/feature-data.ts
 msgid "npm only"
-msgstr ""
-
-#: src/site/feature-data.ts
-msgid "Reserved names that mirrors never serve"
 msgstr ""
 
 #: src/site/Decisions.tsx
@@ -215,15 +219,15 @@ msgid "IP allowlists for each registry"
 msgstr ""
 
 #: src/site/feature-data.ts
-msgid "Private network allowlist for upstreams"
-msgstr ""
-
-#: src/site/feature-data.ts
 msgid "Audit log export"
 msgstr ""
 
 #: src/site/feature-data.ts
 msgid "Enterprise syncs OSV data ahead of time for every ecosystem it covers."
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Ecosystem analytics and usage metrics"
 msgstr ""
 
 #: src/site/feature-data.ts
@@ -286,10 +290,6 @@ msgstr ""
 msgid "Run Kurra with Docker Compose or a Helm chart, inside your own network."
 msgstr ""
 
-#: src/site/feature-data.ts
-msgid "Software bill of materials for Docker and Helm images"
-msgstr ""
-
 #: src/site/control-coverage.ts
 msgid "Build attestation"
 msgstr ""
@@ -298,8 +298,8 @@ msgstr ""
 msgid "Enterprise"
 msgstr ""
 
-#: src/site/feature-data.ts
-msgid "Hold mirrored files to the checksum the upstream publishes"
+#: src/routes/features.tsx
+msgid "APT, APK, and RPM have no name reputation check, because the distribution sets package names."
 msgstr ""
 
 #: src/site/Decisions.tsx
@@ -342,12 +342,12 @@ msgstr ""
 msgid "View on GitHub"
 msgstr ""
 
-#: src/site/feature-data.ts
-msgid "License allow list and deny list"
-msgstr ""
-
 #: src/site/Compliance.tsx
 msgid "Kurra generates a CycloneDX bill of materials the first time a Docker or Helm image is cached."
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Reserved package names that mirrors never serve"
 msgstr ""
 
 #: src/site/Footer.tsx
@@ -416,10 +416,6 @@ msgstr ""
 msgid "Give each token only what it needs"
 msgstr ""
 
-#: src/site/feature-data.ts
-msgid "Short-lived tokens for CI jobs, with no stored secret"
-msgstr ""
-
 #: src/routes/features.tsx
 msgid "Helm is covered in part. Classic chart repositories are checked for release age and provenance files. OCI charts are checked with cosign signatures, like Docker images."
 msgstr ""
@@ -432,16 +428,12 @@ msgstr ""
 msgid "Kurra refuses to serve it"
 msgstr ""
 
-#: src/site/feature-data.ts
-msgid "Usage by ecosystem"
-msgstr ""
-
 #: src/routes/features.tsx
 msgid "Which ecosystems each control covers"
 msgstr ""
 
 #: src/site/feature-data.ts
-msgid "Known advisories on package pages"
+msgid "Admin, Security, Publisher, Reader, and Auditor roles"
 msgstr ""
 
 #: src/site/SetupTabs.tsx
@@ -450,6 +442,10 @@ msgstr ""
 
 #: src/site/samples.tsx
 msgid "License <0>{license}</0> is blocked by the license policy."
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Verify mirrored files match the checksum the upstream publishes"
 msgstr ""
 
 #: src/site/feature-data.ts
@@ -521,6 +517,10 @@ msgstr ""
 msgid "Mirroring and caching"
 msgstr ""
 
+#: src/site/feature-data.ts
+msgid "Zero-trust integrations for CI systems"
+msgstr ""
+
 #: src/site/FeatureTable.tsx
 msgid "Features in the open source version and in Enterprise"
 msgstr ""
@@ -555,6 +555,10 @@ msgstr ""
 
 #: src/site/Ecosystems.tsx
 msgid "{count, plural, one {# ecosystem, one gateway} other {# ecosystems, one gateway}}"
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Known advisories shown on package pages"
 msgstr ""
 
 #: src/site/feature-data.ts
@@ -621,10 +625,6 @@ msgstr ""
 msgid "Language"
 msgstr ""
 
-#: src/site/Access.tsx
-msgid "Admin, Security manager, Publisher, Reader, and Auditor roles come with every tenant."
-msgstr ""
-
 #: src/site/Hosting.tsx
 msgid "Separate tenants"
 msgstr ""
@@ -649,10 +649,6 @@ msgstr ""
 msgid "Sign in with GitHub"
 msgstr ""
 
-#: src/routes/features.tsx
-msgid "apt, apk, and RPM have no name reputation check, because the distribution sets package names."
-msgstr ""
-
 #: src/site/Access.tsx
 msgid "Sign in with GitHub, or with single sign-on."
 msgstr ""
@@ -675,6 +671,10 @@ msgstr ""
 
 #: src/site/feature-data.ts
 msgid "Upstream rate limits, backoff, and stale copies when an upstream fails"
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Software license allow list"
 msgstr ""
 
 #: src/site/DecisionStream.tsx

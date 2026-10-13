@@ -74,7 +74,7 @@ export const FEATURE_GROUPS: readonly FeatureGroup[] = [
       },
       {
         id: "advisory-data",
-        name: msg`Known advisories on package pages`,
+        name: msg`Known advisories shown on package pages`,
         openSource: msg`npm only`,
         enterprise: "yes",
         note: msg`Enterprise syncs OSV data ahead of time for every ecosystem it covers.`,
@@ -94,7 +94,7 @@ export const FEATURE_GROUPS: readonly FeatureGroup[] = [
       },
       {
         id: "license-policy",
-        name: msg`License allow list and deny list`,
+        name: msg`Software license allow list`,
         openSource: "no",
         enterprise: "yes",
       },
@@ -113,7 +113,7 @@ export const FEATURE_GROUPS: readonly FeatureGroup[] = [
       },
       {
         id: "published-checksums",
-        name: msg`Hold mirrored files to the checksum the upstream publishes`,
+        name: msg`Verify mirrored files match the checksum the upstream publishes`,
         openSource: "yes",
         enterprise: "yes",
         note: msg`A file that doesn’t match is never cached or served.`,
@@ -132,7 +132,7 @@ export const FEATURE_GROUPS: readonly FeatureGroup[] = [
       },
       {
         id: "sbom",
-        name: msg`Software bill of materials for Docker and Helm images`,
+        name: msg`Software bill of materials for container images`,
         openSource: "no",
         enterprise: "yes",
         note: msg`Generated in CycloneDX format when an image is first cached.`,
@@ -146,12 +146,12 @@ export const FEATURE_GROUPS: readonly FeatureGroup[] = [
       {
         id: "hosted-registries",
         name: msg`Publish your own packages to a Kurra registry`,
-        openSource: "no",
+        openSource: "yes",
         enterprise: "yes",
       },
       {
         id: "reserved-names",
-        name: msg`Reserved names that mirrors never serve`,
+        name: msg`Reserved package names that mirrors never serve`,
         openSource: "no",
         enterprise: "yes",
         note: msg`Stops a public package from shadowing one you host.`,
@@ -190,7 +190,7 @@ export const FEATURE_GROUPS: readonly FeatureGroup[] = [
       },
       {
         id: "system-roles",
-        name: msg`Admin, Security manager, Publisher, Reader, and Auditor roles`,
+        name: msg`Admin, Security, Publisher, Reader, and Auditor roles`,
         openSource: "yes",
         enterprise: "yes",
       },
@@ -214,13 +214,13 @@ export const FEATURE_GROUPS: readonly FeatureGroup[] = [
       },
       {
         id: "workload-identity",
-        name: msg`Short-lived tokens for CI jobs, with no stored secret`,
+        name: msg`Zero-trust integrations for CI systems`,
         openSource: "no",
         enterprise: "yes",
       },
       {
         id: "private-networks",
-        name: msg`Private network allowlist for upstreams`,
+        name: msg`Private network allowlists`,
         openSource: "no",
         enterprise: "yes",
         note: msg`Available when you host Kurra yourself.`,
@@ -246,13 +246,13 @@ export const FEATURE_GROUPS: readonly FeatureGroup[] = [
       },
       {
         id: "usage",
-        name: msg`Usage by ecosystem`,
+        name: msg`Ecosystem analytics and usage metrics`,
         openSource: "yes",
         enterprise: "yes",
       },
       {
         id: "self-hosted",
-        name: msg`Self-hosting with Docker Compose or a Helm chart`,
+        name: msg`Self-hosted architecture`,
         openSource: "yes",
         enterprise: "yes",
       },

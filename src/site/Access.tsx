@@ -170,7 +170,7 @@ export function Access() {
             </li>
             <li>
               <Trans>
-                Admin, Security manager, Publisher, Reader, and Auditor roles come with every
+                Admin, Security, Publisher, Reader, and Auditor roles come with every
                 tenant.
               </Trans>
             </li>

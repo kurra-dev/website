@@ -84,7 +84,7 @@ const SNIPPETS: readonly Snippet[] = [
   },
   {
     id: "apk",
-    label: "apk",
+    label: "APK",
     file: "/etc/apk/repositories",
     lines: [
       { sign: "-", text: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main" },

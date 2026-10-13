@@ -94,7 +94,7 @@ export function FeaturesPage() {
             </li>
             <li>
               <Trans>
-                apt, apk, and RPM have no name reputation check, because the distribution sets
+                APT, APK, and RPM have no name reputation check, because the distribution sets
                 package names.
               </Trans>
             </li>
