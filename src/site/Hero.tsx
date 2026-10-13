@@ -11,11 +11,6 @@ export function Hero() {
     <Section tone="ink" className="hero" labelledBy="hero-title">
       <div className="hero-grid" aria-hidden="true" />
       <div className="hero-copy">
-        <p className="eyebrow">
-          <span className="chip chip-mono">
-            <Trans>Early access</Trans>
-          </span>
-        </p>
         <h1 id="hero-title" className="display">
           <Trans>Every package gets a decision before it reaches your build</Trans>
         </h1>

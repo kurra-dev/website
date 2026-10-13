@@ -343,10 +343,6 @@ msgstr ""
 msgid "Put a decision in front of every install"
 msgstr ""
 
-#: src/site/Hero.tsx
-msgid "Early access"
-msgstr ""
-
 #: src/site/LocalePicker.tsx
 msgid "Language"
 msgstr ""

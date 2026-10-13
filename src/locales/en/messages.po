@@ -343,10 +343,6 @@ msgstr "Each version is checked against published advisories from npm and OSV th
 msgid "Put a decision in front of every install"
 msgstr "Put a decision in front of every install"
 
-#: src/site/Hero.tsx
-msgid "Early access"
-msgstr "Early access"
-
 #: src/site/LocalePicker.tsx
 msgid "Language"
 msgstr "Language"

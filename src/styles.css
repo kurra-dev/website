@@ -121,7 +121,7 @@ body {
 
 .display {
   max-width: 20ch;
-  margin: 24px 0 0;
+  margin: 0;
   font-size: clamp(2.5rem, 1.2rem + 4.6vw, 4.5rem);
   font-weight: 600;
   line-height: 1.05;
@@ -365,10 +365,6 @@ body {
 .chip .eco-tile svg {
   width: 12px;
   height: 12px;
-}
-
-.eyebrow {
-  margin: 0;
 }
 
 .pill {
