@@ -54,9 +54,9 @@ msgstr "Reputation check: the name resembles <0>{popular}</0>."
 msgid "Blocked"
 msgstr "Blocked"
 
-#: src/site/Compliance.tsx
-msgid "Each decision is recorded with what decided, when, and why. The audit log behind it is tamper-evident and can be exported on the Enterprise plan."
-msgstr "Each decision is recorded with what decided, when, and why. The audit log behind it is tamper-evident and can be exported on the Enterprise plan."
+#: src/site/Access.tsx
+msgid "Sign in with GitHub, or with single sign-on. There are no passwords."
+msgstr "Sign in with GitHub, or with single sign-on. There are no passwords."
 
 #: src/site/Decisions.tsx
 msgid "People can also allow or block a package by hand. A manual decision never expires, and only a person can clear it."
@@ -120,10 +120,6 @@ msgstr "View Kurra on GitHub"
 msgid "Permissions"
 msgstr "Permissions"
 
-#: src/site/Access.tsx
-msgid "A CI job can exchange its own identity for a short-lived token, with no stored secret. This needs the Enterprise plan."
-msgstr "A CI job can exchange its own identity for a short-lived token, with no stored secret. This needs the Enterprise plan."
-
 #: src/site/Compliance.tsx
 msgid "Advisories, package licenses, software bills of materials, provenance, and an audit log sit next to the cache, not in a separate tool."
 msgstr "Advisories, package licenses, software bills of materials, provenance, and an audit log sit next to the cache, not in a separate tool."
@@ -173,9 +169,9 @@ msgstr "Tokens, roles, and activity work the same way in every ecosystem. Adviso
 msgid "Run Kurra with Docker Compose or a Helm chart, inside your own network."
 msgstr "Run Kurra with Docker Compose or a Helm chart, inside your own network."
 
-#: src/site/Setup.tsx
-msgid "A hosted registry serves the packages your teams publish. It needs the Enterprise plan."
-msgstr "A hosted registry serves the packages your teams publish. It needs the Enterprise plan."
+#: src/site/Access.tsx
+msgid "A CI job can exchange its own identity for a short-lived token, with no stored secret."
+msgstr "A CI job can exchange its own identity for a short-lived token, with no stored secret."
 
 #: src/site/SetupTabs.tsx
 msgid "Copy"
@@ -226,10 +222,6 @@ msgstr "Package managers keep working the way they do today. You change the addr
 msgid "Each version is checked against published advisories from npm and OSV when it is first pulled, and cached versions are checked again later. This covers every ecosystem except Docker, Helm, and Terraform."
 msgstr "Each version is checked against published advisories from npm and OSV when it is first pulled, and cached versions are checked again later. This covers every ecosystem except Docker, Helm, and Terraform."
 
-#: src/site/Compliance.tsx
-msgid "Which checks are included depends on your plan."
-msgstr "Which checks are included depends on your plan."
-
 #: src/site/Access.tsx
 msgid "Expires"
 msgstr "Expires"
@@ -278,10 +270,6 @@ msgstr "Point your package managers at Kurra, a caching pull-through gateway for
 #: src/site/Setup.tsx
 msgid "A mirror fetches a package from its upstream the first time someone asks for it, and keeps a copy."
 msgstr "A mirror fetches a package from its upstream the first time someone asks for it, and keeps a copy."
-
-#: src/site/Access.tsx
-msgid "Sign in with GitHub, or with single sign-on on the Enterprise plan. There are no passwords."
-msgstr "Sign in with GitHub, or with single sign-on on the Enterprise plan. There are no passwords."
 
 #: src/site/Compliance.tsx
 msgid "Provenance"
@@ -351,6 +339,10 @@ msgstr "Either way, your packages live in a storage bucket you own, and each ten
 msgid "Licenses"
 msgstr "Licenses"
 
+#: src/site/Setup.tsx
+msgid "A hosted registry serves the packages your teams publish."
+msgstr "A hosted registry serves the packages your teams publish."
+
 #: src/site/Header.tsx
 msgid "Primary"
 msgstr "Primary"
@@ -366,6 +358,10 @@ msgstr "Reputation check"
 #: src/site/Hosting.tsx
 msgid "Put a decision in front of every install"
 msgstr "Put a decision in front of every install"
+
+#: src/site/Compliance.tsx
+msgid "Each decision is recorded with what decided, when, and why. The audit log behind it is tamper-evident."
+msgstr "Each decision is recorded with what decided, when, and why. The audit log behind it is tamper-evident."
 
 #: src/site/Hero.tsx
 msgid "Early access"

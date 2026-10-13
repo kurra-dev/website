@@ -26,10 +26,7 @@ export function Setup() {
               </Trans>
             </li>
             <li>
-              <Trans>
-                A hosted registry serves the packages your teams publish. It needs the Enterprise
-                plan.
-              </Trans>
+              <Trans>A hosted registry serves the packages your teams publish.</Trans>
             </li>
             <li>
               <Trans>

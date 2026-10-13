@@ -59,13 +59,10 @@ export function Compliance() {
         <Fact title={<Trans>Activity and audit log</Trans>}>
           <Trans>
             Each decision is recorded with what decided, when, and why. The audit log behind it is
-            tamper-evident and can be exported on the Enterprise plan.
+            tamper-evident.
           </Trans>
         </Fact>
       </div>
-      <p className="footnote">
-        <Trans>Which checks are included depends on your plan.</Trans>
-      </p>
     </Section>
   );
 }

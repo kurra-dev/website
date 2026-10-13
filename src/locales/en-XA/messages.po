@@ -54,8 +54,8 @@ msgstr ""
 msgid "Blocked"
 msgstr ""
 
-#: src/site/Compliance.tsx
-msgid "Each decision is recorded with what decided, when, and why. The audit log behind it is tamper-evident and can be exported on the Enterprise plan."
+#: src/site/Access.tsx
+msgid "Sign in with GitHub, or with single sign-on. There are no passwords."
 msgstr ""
 
 #: src/site/Decisions.tsx
@@ -120,10 +120,6 @@ msgstr ""
 msgid "Permissions"
 msgstr ""
 
-#: src/site/Access.tsx
-msgid "A CI job can exchange its own identity for a short-lived token, with no stored secret. This needs the Enterprise plan."
-msgstr ""
-
 #: src/site/Compliance.tsx
 msgid "Advisories, package licenses, software bills of materials, provenance, and an audit log sit next to the cache, not in a separate tool."
 msgstr ""
@@ -173,8 +169,8 @@ msgstr ""
 msgid "Run Kurra with Docker Compose or a Helm chart, inside your own network."
 msgstr ""
 
-#: src/site/Setup.tsx
-msgid "A hosted registry serves the packages your teams publish. It needs the Enterprise plan."
+#: src/site/Access.tsx
+msgid "A CI job can exchange its own identity for a short-lived token, with no stored secret."
 msgstr ""
 
 #: src/site/SetupTabs.tsx
@@ -226,10 +222,6 @@ msgstr ""
 msgid "Each version is checked against published advisories from npm and OSV when it is first pulled, and cached versions are checked again later. This covers every ecosystem except Docker, Helm, and Terraform."
 msgstr ""
 
-#: src/site/Compliance.tsx
-msgid "Which checks are included depends on your plan."
-msgstr ""
-
 #: src/site/Access.tsx
 msgid "Expires"
 msgstr ""
@@ -277,10 +269,6 @@ msgstr ""
 
 #: src/site/Setup.tsx
 msgid "A mirror fetches a package from its upstream the first time someone asks for it, and keeps a copy."
-msgstr ""
-
-#: src/site/Access.tsx
-msgid "Sign in with GitHub, or with single sign-on on the Enterprise plan. There are no passwords."
 msgstr ""
 
 #: src/site/Compliance.tsx
@@ -351,6 +339,10 @@ msgstr ""
 msgid "Licenses"
 msgstr ""
 
+#: src/site/Setup.tsx
+msgid "A hosted registry serves the packages your teams publish."
+msgstr ""
+
 #: src/site/Header.tsx
 msgid "Primary"
 msgstr ""
@@ -365,6 +357,10 @@ msgstr ""
 
 #: src/site/Hosting.tsx
 msgid "Put a decision in front of every install"
+msgstr ""
+
+#: src/site/Compliance.tsx
+msgid "Each decision is recorded with what decided, when, and why. The audit log behind it is tamper-evident."
 msgstr ""
 
 #: src/site/Hero.tsx

@@ -173,15 +173,12 @@ export function Access() {
               </Trans>
             </li>
             <li>
-              <Trans>
-                Sign in with GitHub, or with single sign-on on the Enterprise plan. There are no
-                passwords.
-              </Trans>
+              <Trans>Sign in with GitHub, or with single sign-on. There are no passwords.</Trans>
             </li>
             <li>
               <Trans>
                 A CI job can exchange its own identity for a short-lived token, with no stored
-                secret. This needs the Enterprise plan.
+                secret.
               </Trans>
             </li>
           </ul>
