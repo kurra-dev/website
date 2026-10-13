@@ -92,7 +92,7 @@ describe("client setup", () => {
     Object.defineProperty(navigator, "clipboard", { value: { writeText }, configurable: true });
     await renderAt("/");
 
-    await user.click(screen.getByRole("tab", { name: "apk" }));
+    await user.click(screen.getByRole("tab", { name: "APK" }));
     expect(screen.getByRole("tabpanel")).toHaveTextContent("/etc/apk/repositories");
 
     await user.click(screen.getByRole("button", { name: "Copy" }));
@@ -167,7 +167,7 @@ describe("features page", () => {
         .map((e) => e.textContent),
     ).toEqual(["Reputation"]);
     expect(
-      within(card("apt"))
+      within(card("APT"))
         .getAllByText(/./, { selector: ".chip" })
         .map((e) => e.textContent),
     ).toEqual(["Release age", "Advisories"]);
