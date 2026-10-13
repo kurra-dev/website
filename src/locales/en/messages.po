@@ -17,17 +17,13 @@ msgstr ""
 msgid "Software bill of materials"
 msgstr "Software bill of materials"
 
-#: src/site/Ecosystems.tsx
-msgid "Docker, Helm, and Terraform have no advisory or license check."
-msgstr "Docker, Helm, and Terraform have no advisory or license check."
-
-#: src/site/Compliance.tsx
-msgid "Each version is checked against published advisories from npm and OSV the first time it is pulled. Cached versions are checked again later. Every ecosystem is covered except Docker, Helm, and Terraform."
-msgstr "Each version is checked against published advisories from npm and OSV the first time it is pulled. Cached versions are checked again later. Every ecosystem is covered except Docker, Helm, and Terraform."
-
 #: src/site/Access.tsx
 msgid "A CI job can trade its own identity for a short-lived token, so you don’t store a secret."
 msgstr "A CI job can trade its own identity for a short-lived token, so you don’t store a secret."
+
+#: src/site/Compliance.tsx
+msgid "Flags package names that look like typosquats of popular packages, before anything is fetched."
+msgstr "Flags package names that look like typosquats of popular packages, before anything is fetched."
 
 #: src/site/SetupTabs.tsx
 msgid "Client"
@@ -53,10 +49,6 @@ msgstr "Reputation check: the name resembles <0>{popular}</0>."
 #: src/site/DecisionStream.tsx
 msgid "Blocked"
 msgstr "Blocked"
-
-#: src/site/Access.tsx
-msgid "Sign in with GitHub, or with single sign-on. There are no passwords."
-msgstr "Sign in with GitHub, or with single sign-on. There are no passwords."
 
 #: src/site/Decisions.tsx
 msgid "People can also allow or block a package by hand. A manual decision never expires, and only a person can clear it."
@@ -97,6 +89,10 @@ msgstr "Copied"
 #: src/site/Access.tsx
 msgid "Name"
 msgstr "Name"
+
+#: src/site/Decisions.tsx
+msgid "Either no check found a reason to stop it, or a person allowed it. Kurra serves the package as normal."
+msgstr "Either no check found a reason to stop it, or a person allowed it. Kurra serves the package as normal."
 
 #: src/site/Hero.tsx
 msgid "Point your package managers at Kurra, a caching gateway for {count, plural, one {# ecosystem} other {# ecosystems}}. It checks each package for known advisories, disallowed licenses, and look-alike names, then records the decision and its reason."
@@ -140,10 +136,6 @@ msgstr "Sample data"
 #: src/site/meta.ts
 msgid "Kurra: a caching gateway for package registries"
 msgstr "Kurra: a caching gateway for package registries"
-
-#: src/site/Compliance.tsx
-msgid "Flags npm and PyPI package names that look like typosquats of popular packages, before anything is fetched."
-msgstr "Flags npm and PyPI package names that look like typosquats of popular packages, before anything is fetched."
 
 #: src/site/Hosting.tsx
 msgid "Either way, your packages are stored in a bucket you own, and each tenant is kept separate from the others."
@@ -263,10 +255,6 @@ msgstr "Configuration copied"
 msgid "License <0>{license}</0> is blocked by the license policy."
 msgstr "License <0>{license}</0> is blocked by the license policy."
 
-#: src/site/Access.tsx
-msgid "A token is shown once, when you create it. Kurra keeps only a hash of it afterward."
-msgstr "A token is shown once, when you create it. Kurra keeps only a hash of it afterward."
-
 #: src/site/Compliance.tsx
 msgid "Set an SPDX allow list or deny list for npm, PyPI, Cargo, Go, Maven, and NuGet. If Kurra can’t read a package’s license, it allows the package."
 msgstr "Set an SPDX allow list or deny list for npm, PyPI, Cargo, Go, Maven, and NuGet. If Kurra can’t read a package’s license, it allows the package."
@@ -331,10 +319,6 @@ msgstr "{count, plural, one {# ecosystem, one gateway} other {# ecosystems, one 
 msgid "Licenses"
 msgstr "Licenses"
 
-#: src/site/Decisions.tsx
-msgid "Either no check found a reason to stop it, or a person allowed it. Allowed means no rule stopped the package. It doesn’t mean the package is safe."
-msgstr "Either no check found a reason to stop it, or a person allowed it. Allowed means no rule stopped the package. It doesn’t mean the package is safe."
-
 #: src/site/Header.tsx
 msgid "Primary"
 msgstr "Primary"
@@ -347,13 +331,13 @@ msgstr "Your package managers work the way they do today. You change the address
 msgid "A mirror fetches a package from its upstream the first time someone asks for it, then keeps a copy."
 msgstr "A mirror fetches a package from its upstream the first time someone asks for it, then keeps a copy."
 
-#: src/site/SetupTabs.tsx
-msgid "Your token goes where the client keeps credentials. Kurra shows a token once, when you create it."
-msgstr "Your token goes where the client keeps credentials. Kurra shows a token once, when you create it."
-
 #: src/site/Compliance.tsx
 msgid "Reputation check"
 msgstr "Reputation check"
+
+#: src/site/Compliance.tsx
+msgid "Each version is checked against published advisories from npm and OSV the first time it is pulled. Cached versions are checked again later."
+msgstr "Each version is checked against published advisories from npm and OSV the first time it is pulled. Cached versions are checked again later."
 
 #: src/site/Hosting.tsx
 msgid "Put a decision in front of every install"
@@ -382,6 +366,10 @@ msgstr "A tenant is a team or business unit in your organization. Its registries
 #: src/site/DecisionStream.tsx
 msgid "Activity"
 msgstr "Activity"
+
+#: src/site/Access.tsx
+msgid "Sign in with GitHub, or with single sign-on."
+msgstr "Sign in with GitHub, or with single sign-on."
 
 #: src/site/Hosting.tsx
 msgid "Each tenant connects its own S3-compatible bucket. Kurra doesn’t keep a bucket of its own."

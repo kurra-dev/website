@@ -64,9 +64,6 @@ export function Ecosystems() {
           </li>
         ))}
       </ul>
-      <p className="footnote">
-        <Trans>Docker, Helm, and Terraform have no advisory or license check.</Trans>
-      </p>
     </Section>
   );
 }

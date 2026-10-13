@@ -1,5 +1,5 @@
 import * as Tabs from "@radix-ui/react-tabs";
-import { Trans, useLingui } from "@lingui/react/macro";
+import { useLingui } from "@lingui/react/macro";
 import { useEffect, useRef, useState } from "react";
 
 import { SAMPLE_HOST, SAMPLE_REGISTRY_HOST } from "./config";
@@ -167,12 +167,6 @@ export function SetupTabs() {
           </pre>
         </Tabs.Content>
       ))}
-      <p className="code-note">
-        <Trans>
-          Your token goes where the client keeps credentials. Kurra shows a token once, when you
-          create it.
-        </Trans>
-      </p>
     </Tabs.Root>
   );
 }

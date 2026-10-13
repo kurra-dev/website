@@ -25,8 +25,8 @@ export function Decisions() {
           </h3>
           <p>
             <Trans>
-              Either no check found a reason to stop it, or a person allowed it. Allowed means no
-              rule stopped the package. It doesn’t mean the package is safe.
+              Either no check found a reason to stop it, or a person allowed it. Kurra serves the
+              package as normal.
             </Trans>
           </p>
         </article>

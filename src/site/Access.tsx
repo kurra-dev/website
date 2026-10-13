@@ -1,4 +1,4 @@
-import { Trans, useLingui } from "@lingui/react/macro";
+import { Trans } from "@lingui/react/macro";
 
 import { useFormat } from "@/lib/i18n";
 
@@ -59,7 +59,6 @@ function ClockGlyph() {
 }
 
 function TokensPanel() {
-  const { t } = useLingui();
   const format = useFormat();
   return (
     <section className="panel" aria-labelledby="tokens-title">
@@ -142,7 +141,6 @@ function TokensPanel() {
           </tbody>
         </table>
       </div>
-      <footer className="panel-foot">{t`A token is shown once, when you create it. Kurra keeps only a hash of it afterward.`}</footer>
     </section>
   );
 }
@@ -177,7 +175,7 @@ export function Access() {
               </Trans>
             </li>
             <li>
-              <Trans>Sign in with GitHub, or with single sign-on. There are no passwords.</Trans>
+              <Trans>Sign in with GitHub, or with single sign-on.</Trans>
             </li>
             <li>
               <Trans>

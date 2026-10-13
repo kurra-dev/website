@@ -55,9 +55,7 @@ describe("copy standard", () => {
 
   for (const [name, pattern] of banned) {
     it(`has no ${name}`, () => {
-      const hits = messages.filter((m) =>
-        pattern.test(m.replace(/doesn’t mean the package is safe\./, "")),
-      );
+      const hits = messages.filter((m) => pattern.test(m));
       expect(hits).toEqual([]);
     });
   }

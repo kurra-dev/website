@@ -29,8 +29,7 @@ export function Compliance() {
         <Fact title={<Trans>Advisories</Trans>}>
           <Trans>
             Each version is checked against published advisories from npm and OSV the first time it
-            is pulled. Cached versions are checked again later. Every ecosystem is covered except
-            Docker, Helm, and Terraform.
+            is pulled. Cached versions are checked again later.
           </Trans>
         </Fact>
         <Fact title={<Trans>Package licenses</Trans>}>
@@ -41,8 +40,8 @@ export function Compliance() {
         </Fact>
         <Fact title={<Trans>Reputation check</Trans>}>
           <Trans>
-            Flags npm and PyPI package names that look like typosquats of popular packages, before
-            anything is fetched.
+            Flags package names that look like typosquats of popular packages, before anything is
+            fetched.
           </Trans>
         </Fact>
         <Fact title={<Trans>Software bill of materials</Trans>}>
