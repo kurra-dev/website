@@ -24,6 +24,10 @@ function Tick() {
   );
 }
 
+const SORTED_ECOSYSTEMS = [...ECOSYSTEMS].sort((a, b) =>
+  a.name.localeCompare(b.name, "en", { sensitivity: "base" }),
+);
+
 /** Which Enterprise policy controls cover which ecosystems: a tick, "Partly", or a dash, each also said in words. */
 export function CoverageTable() {
   const { t, i18n } = useLingui();
@@ -61,7 +65,7 @@ export function CoverageTable() {
           </tr>
         </thead>
         <tbody>
-          {ECOSYSTEMS.map(({ id, name }) => (
+          {SORTED_ECOSYSTEMS.map(({ id, name }) => (
             <tr key={id}>
               <th scope="row" className="feature-name">
                 <span className="coverage-name">
