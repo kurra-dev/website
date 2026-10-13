@@ -34,8 +34,8 @@ export function Compliance() {
         </Fact>
         <Fact title={<Trans>Package licenses</Trans>}>
           <Trans>
-            Set an SPDX allow list or deny list for npm, PyPI, Cargo, Go, Maven, and NuGet. If Kurra
-            can’t read a package’s license, it allows the package.
+            Set an SPDX allow list or deny list. If Kurra can’t read a package’s license, it allows
+            the package.
           </Trans>
         </Fact>
         <Fact title={<Trans>Reputation check</Trans>}>
@@ -44,10 +44,23 @@ export function Compliance() {
             fetched.
           </Trans>
         </Fact>
+        <Fact title={<Trans>Minimum release age</Trans>}>
+          <Trans>
+            Refuses a version until it has been published for the number of days you set. This
+            covers every ecosystem except Docker and OCI Helm charts, which state no publish time.
+          </Trans>
+        </Fact>
         <Fact title={<Trans>Software bill of materials</Trans>}>
           <Trans>
             Kurra generates a CycloneDX bill of materials the first time a Docker or Helm image is
             cached.
+          </Trans>
+        </Fact>
+        <Fact title={<Trans>Upstream verification</Trans>}>
+          <Trans>
+            Kurra checks the signatures, checksums, and attestations that upstream registries
+            publish, and records the result. A file that doesn’t match a published checksum is never
+            cached or served.
           </Trans>
         </Fact>
         <Fact title={<Trans>Provenance</Trans>}>

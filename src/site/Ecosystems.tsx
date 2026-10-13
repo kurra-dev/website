@@ -1,35 +1,20 @@
-import { Plural, Trans } from "@lingui/react/macro";
+import { Plural, Trans, useLingui } from "@lingui/react/macro";
 
+import { applies, type ControlId } from "./control-coverage";
 import { ECOSYSTEMS } from "./ecosystem-data";
-import { EcosystemTile, type EcosystemId } from "./glyphs";
+import { EcosystemTile } from "./glyphs";
 import { Section, SectionHead } from "./Section";
 
-// Where each check applies (glossary: facts the copy must not contradict, 4 and 5). Docker, Helm and Terraform have
-// neither check.
-const ADVISORIES: ReadonlySet<EcosystemId> = new Set([
-  "npm",
-  "pypi",
-  "rubygems",
-  "composer",
-  "cargo",
-  "go",
-  "maven",
-  "nuget",
-  "apt",
-  "apk",
-  "rpm",
-]);
-const LICENSES: ReadonlySet<EcosystemId> = new Set([
-  "npm",
-  "pypi",
-  "cargo",
-  "go",
-  "maven",
-  "nuget",
-]);
-
 export function Ecosystems() {
+  const { t } = useLingui();
   const count = ECOSYSTEMS.length;
+  // The four policy controls, from the control coverage table. Signatures and attestations are on the features page.
+  const chips: readonly { control: ControlId; label: string }[] = [
+    { control: "reputation", label: t`Reputation` },
+    { control: "minimumAge", label: t`Release age` },
+    { control: "advisory", label: t`Advisories` },
+    { control: "license", label: t`Licenses` },
+  ];
   return (
     <Section id="ecosystems" tone="paper" labelledBy="ecosystems-title">
       <SectionHead
@@ -39,8 +24,8 @@ export function Ecosystems() {
         }
         lead={
           <Trans>
-            Tokens, roles, and activity work the same way in every ecosystem. Advisory and license
-            checks run wherever the ecosystem provides the data.
+            Tokens, roles, and activity work the same way in every ecosystem. Policy checks run
+            wherever the ecosystem provides the data they need.
           </Trans>
         }
       />
@@ -50,16 +35,13 @@ export function Ecosystems() {
             <EcosystemTile id={id} large />
             <span className="eco-name">{name}</span>
             <span className="eco-checks">
-              {ADVISORIES.has(id) ? (
-                <span className="chip">
-                  <Trans>Advisories</Trans>
-                </span>
-              ) : null}
-              {LICENSES.has(id) ? (
-                <span className="chip">
-                  <Trans>Licenses</Trans>
-                </span>
-              ) : null}
+              {chips
+                .filter(({ control }) => applies(id, control))
+                .map(({ control, label }) => (
+                  <span key={control} className="chip">
+                    {label}
+                  </span>
+                ))}
             </span>
           </li>
         ))}

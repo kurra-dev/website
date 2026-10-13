@@ -4,33 +4,18 @@ import { GITHUB_HREF } from "./config";
 import { LocalePicker } from "./LocalePicker";
 import { Logo } from "./Logo";
 
-/** Sticky top bar on ink. Navigation is the page's own sections; the one brand-filled action lives in the hero. */
+/** Sticky top bar on ink: the logo, a link to the features page, and the GitHub link. */
 export function Header() {
   const { t } = useLingui();
   return (
     <header className="topbar" data-theme="dark">
       <div className="topbar-inner">
-        <a href="#top" className="topbar-logo" aria-label={t`Kurra, back to the top`}>
+        <a href="/" className="topbar-logo" aria-label={t`Kurra, home page`}>
           <Logo />
         </a>
         <nav className="topbar-nav" aria-label={t`Primary`}>
-          <a href="#setup">
-            <Trans>Setup</Trans>
-          </a>
-          <a href="#decisions">
-            <Trans>Decisions</Trans>
-          </a>
-          <a href="#ecosystems">
-            <Trans>Ecosystems</Trans>
-          </a>
-          <a href="#compliance">
-            <Trans>Compliance</Trans>
-          </a>
-          <a href="#access">
-            <Trans>Access</Trans>
-          </a>
-          <a href="#hosting">
-            <Trans>Hosting</Trans>
+          <a href="/features/">
+            <Trans>Features</Trans>
           </a>
         </nav>
         <div className="topbar-actions">

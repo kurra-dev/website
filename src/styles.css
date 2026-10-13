@@ -838,6 +838,174 @@ body {
   min-height: 22px;
 }
 
+/* Open source and Enterprise comparison */
+
+.page-hero {
+  position: relative;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  overflow: clip;
+}
+
+.compare-scroll {
+  position: relative;
+  margin-top: 48px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-panel);
+  overflow: hidden;
+}
+
+.compare {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.compare thead th {
+  padding: 12px 20px;
+  background: var(--bg-subtle);
+  border-bottom: 1px solid var(--border-default);
+  color: var(--fg-muted);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: start;
+}
+
+.compare .col-edition {
+  width: 168px;
+  text-align: center;
+}
+
+.compare .group-row th {
+  padding: 10px 20px;
+  background: var(--bg-canvas);
+  border-bottom: 1px solid var(--border-default);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: start;
+}
+
+.compare tbody + tbody .group-row th {
+  border-top: 1px solid var(--border-default);
+}
+
+.compare td,
+.compare .feature-name {
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border-default);
+  font-weight: 400;
+  text-align: start;
+  vertical-align: top;
+}
+
+.compare td.col-edition {
+  text-align: center;
+}
+
+.compare tbody:last-child tr:last-child td,
+.compare tbody:last-child tr:last-child .feature-name {
+  border-bottom: 0;
+}
+
+.feature-note {
+  display: block;
+  margin-top: 2px;
+  color: var(--fg-muted);
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.mark {
+  display: inline-block;
+  color: var(--fg-default);
+  vertical-align: middle;
+}
+
+.cell-text {
+  color: var(--fg-muted);
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.coverage .col-control {
+  width: auto;
+  text-align: center;
+}
+
+.coverage thead th.col-control {
+  white-space: nowrap;
+}
+
+.coverage-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.coverage-notes {
+  display: grid;
+  gap: 8px;
+  max-width: 68ch;
+  margin: 24px 0 0;
+  padding: 0;
+  color: var(--fg-muted);
+  font-size: 14px;
+  line-height: 1.5;
+  list-style: none;
+}
+
+@media (max-width: 960px) {
+  .coverage-scroll {
+    overflow-x: auto;
+  }
+
+  .coverage {
+    min-width: 760px;
+  }
+}
+
+.compare-note {
+  max-width: 68ch;
+  margin: 24px 0 0;
+  color: var(--fg-muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media (max-width: 720px) {
+  .compare {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .compare thead th,
+  .compare td,
+  .compare .feature-name,
+  .compare .group-row th {
+    padding-inline: 12px;
+  }
+
+  .compare .col-edition {
+    width: 80px;
+    padding-inline: 4px;
+  }
+
+  .compare thead th.col-edition {
+    font-size: 12px;
+  }
+
+  .cell-text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
 /* Tokens table */
 
 .table-scroll {
@@ -986,10 +1154,6 @@ body {
 
   .split-even {
     margin-top: 48px;
-  }
-
-  .topbar-nav {
-    display: none;
   }
 
   .topbar-actions {

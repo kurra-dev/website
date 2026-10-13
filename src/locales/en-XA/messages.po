@@ -33,12 +33,36 @@ msgstr ""
 msgid "Activity and audit log"
 msgstr ""
 
+#: src/site/Ecosystems.tsx
+msgid "Reputation"
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Turn an ecosystem off for an organization"
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Uses Valkey, so every replica enforces the same limits."
+msgstr ""
+
 #: src/site/Hosting.tsx
 msgid "Storage you own"
 msgstr ""
 
+#: src/site/control-coverage.ts
+msgid "Advisory blocking"
+msgstr ""
+
 #: src/site/Footer.tsx
 msgid "A caching gateway for package registries."
+msgstr ""
+
+#: src/site/meta.ts
+msgid "Kurra features"
+msgstr ""
+
+#: src/site/control-coverage.ts
+msgid "Registry signature"
 msgstr ""
 
 #: src/site/samples.tsx
@@ -50,8 +74,24 @@ msgstr ""
 msgid "Blocked"
 msgstr ""
 
+#: src/routes/features.tsx
+msgid "The open source version mirrors every supported ecosystem and controls who can pull from it. Enterprise adds the checks that decide what is allowed in."
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Admin, Security manager, Publisher, Reader, and Auditor roles"
+msgstr ""
+
 #: src/site/Decisions.tsx
 msgid "People can also allow or block a package by hand. A manual decision never expires, and only a person can clear it."
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Set a severity threshold for the organization or for each tenant."
+msgstr ""
+
+#: src/site/Header.tsx
+msgid "Kurra, home page"
 msgstr ""
 
 #: src/site/Decisions.tsx
@@ -62,12 +102,8 @@ msgstr ""
 msgid "Find the code, the documentation, and the latest changes on GitHub."
 msgstr ""
 
-#: src/site/Header.tsx
-msgid "Ecosystems"
-msgstr ""
-
-#: src/site/Ecosystems.tsx
-msgid "Tokens, roles, and activity work the same way in every ecosystem. Advisory and license checks run wherever the ecosystem provides the data."
+#: src/site/CoverageTable.tsx
+msgid "Not covered"
 msgstr ""
 
 #: src/site/Hero.tsx
@@ -76,6 +112,10 @@ msgstr ""
 
 #: src/site/Hosting.tsx
 msgid "Self-hosted"
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Self-hosting with Docker Compose or a Helm chart"
 msgstr ""
 
 #: src/site/Access.tsx
@@ -107,17 +147,42 @@ msgstr ""
 msgid "Page not found"
 msgstr ""
 
+#: src/routes/features.tsx
 #: src/site/Hero.tsx
 #: src/site/Hosting.tsx
 msgid "View Kurra on GitHub"
+msgstr ""
+
+#: src/site/CoverageTable.tsx
+msgid "Covered"
 msgstr ""
 
 #: src/site/Access.tsx
 msgid "Permissions"
 msgstr ""
 
+#: src/routes/features.tsx
+msgid "Docker’s cosign signatures are checked as build attestations, so Docker has no registry signature check."
+msgstr ""
+
+#: src/routes/features.tsx
+msgid "A policy control applies to the ecosystems that provide the data it needs, so a setting can have no effect in an ecosystem it doesn’t cover. The next table lists them."
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Access and identity"
+msgstr ""
+
 #: src/site/Access.tsx
 msgid "An organization owns its tenants, and organization settings override tenant settings."
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "npm only"
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Reserved names that mirrors never serve"
 msgstr ""
 
 #: src/site/Decisions.tsx
@@ -133,24 +198,80 @@ msgstr ""
 msgid "Sample data"
 msgstr ""
 
+#: src/site/CoverageTable.tsx
+msgid "Which ecosystems each Enterprise control covers"
+msgstr ""
+
+#: src/site/FeatureTable.tsx
+msgid "Included"
+msgstr ""
+
 #: src/site/meta.ts
 msgid "Kurra: a caching gateway for package registries"
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "IP allowlists for each registry"
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Private network allowlist for upstreams"
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Audit log export"
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Enterprise syncs OSV data ahead of time for every ecosystem it covers."
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Generated in CycloneDX format when an image is first cached."
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Block packages with known advisories"
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Audit and operations"
+msgstr ""
+
+#: src/site/Ecosystems.tsx
+msgid "Tokens, roles, and activity work the same way in every ecosystem. Policy checks run wherever the ecosystem provides the data they need."
+msgstr ""
+
+#: src/site/control-coverage.ts
+msgid "Name reputation"
 msgstr ""
 
 #: src/site/Hosting.tsx
 msgid "Either way, your packages are stored in a bucket you own, and each tenant is kept separate from the others."
 msgstr ""
 
+#: src/site/FeatureTable.tsx
+msgid "Feature"
+msgstr ""
+
 #: src/site/Hero.tsx
 msgid "Every package gets a decision before it reaches your build"
 msgstr ""
 
-#: src/site/Header.tsx
-msgid "Hosting"
+#: src/site/feature-data.ts
+msgid "Mirrors for every supported ecosystem"
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Rate limits and quota tracking shared across replicas"
 msgstr ""
 
 #: src/site/Access.tsx
 msgid "A token can hold fewer permissions than its owner, but never more, and can reach only the registries you choose. It expires after 90 days unless you set another lifetime."
+msgstr ""
+
+#: src/routes/features.tsx
+msgid "What each version includes"
 msgstr ""
 
 #: src/site/Decisions.tsx
@@ -165,6 +286,22 @@ msgstr ""
 msgid "Run Kurra with Docker Compose or a Helm chart, inside your own network."
 msgstr ""
 
+#: src/site/feature-data.ts
+msgid "Software bill of materials for Docker and Helm images"
+msgstr ""
+
+#: src/site/control-coverage.ts
+msgid "Build attestation"
+msgstr ""
+
+#: src/site/FeatureTable.tsx
+msgid "Enterprise"
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Hold mirrored files to the checksum the upstream publishes"
+msgstr ""
+
 #: src/site/Decisions.tsx
 msgid "Clients get an error that names the rule and says what to do next. The reason names the cause, such as an advisory, a license, or an administrator."
 msgstr ""
@@ -177,8 +314,16 @@ msgstr ""
 msgid "Nothing stopped it"
 msgstr ""
 
+#: src/site/Compliance.tsx
+msgid "Set an SPDX allow list or deny list. If Kurra can’t read a package’s license, it allows the package."
+msgstr ""
+
 #: src/site/Setup.tsx
 msgid "A token holds only the permissions and reaches only the registries you choose."
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Refuse files that fail verification"
 msgstr ""
 
 #: src/site/samples.tsx
@@ -189,8 +334,16 @@ msgstr ""
 msgid "Registries"
 msgstr ""
 
+#: src/site/CoverageTable.tsx
+msgid "Ecosystem"
+msgstr ""
+
 #: src/site/Header.tsx
 msgid "View on GitHub"
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "License allow list and deny list"
 msgstr ""
 
 #: src/site/Compliance.tsx
@@ -199,6 +352,10 @@ msgstr ""
 
 #: src/site/Footer.tsx
 msgid "© {year} Kurra"
+msgstr ""
+
+#: src/site/meta.ts
+msgid "See what the open source version of Kurra includes and what Enterprise adds, from package policy to identity and audit."
 msgstr ""
 
 #: src/site/Access.tsx
@@ -214,16 +371,32 @@ msgstr ""
 msgid "Allowed"
 msgstr ""
 
+#: src/site/feature-data.ts
+msgid "Refuses a version until it has been published for the number of days you set."
+msgstr ""
+
+#: src/site/FeatureTable.tsx
+msgid "Not included"
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Custom roles"
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Tokens limited to chosen permissions and registries"
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Reputation check for look-alike package names"
+msgstr ""
+
 #: src/site/Access.tsx
 msgid "Expires"
 msgstr ""
 
 #: src/routes/not-found.tsx
 msgid "That page can’t be found. It may have moved."
-msgstr ""
-
-#: src/site/Header.tsx
-msgid "Decisions"
 msgstr ""
 
 #: src/site/DecisionStream.tsx
@@ -235,16 +408,40 @@ msgstr ""
 msgid "Advisories"
 msgstr ""
 
+#: src/routes/features.tsx
+msgid "These are the Enterprise policy controls. A setting for a control does nothing in an ecosystem it doesn’t cover."
+msgstr ""
+
 #: src/site/Access.tsx
 msgid "Give each token only what it needs"
 msgstr ""
 
-#: src/site/Header.tsx
-msgid "Access"
+#: src/site/feature-data.ts
+msgid "Short-lived tokens for CI jobs, with no stored secret"
+msgstr ""
+
+#: src/routes/features.tsx
+msgid "Helm is covered in part. Classic chart repositories are checked for release age and provenance files. OCI charts are checked with cosign signatures, like Docker images."
+msgstr ""
+
+#: src/site/Ecosystems.tsx
+msgid "Release age"
 msgstr ""
 
 #: src/site/Decisions.tsx
 msgid "Kurra refuses to serve it"
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Usage by ecosystem"
+msgstr ""
+
+#: src/routes/features.tsx
+msgid "Which ecosystems each control covers"
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Known advisories on package pages"
 msgstr ""
 
 #: src/site/SetupTabs.tsx
@@ -255,36 +452,85 @@ msgstr ""
 msgid "License <0>{license}</0> is blocked by the license policy."
 msgstr ""
 
-#: src/site/Compliance.tsx
-msgid "Set an SPDX allow list or deny list for npm, PyPI, Cargo, Go, Maven, and NuGet. If Kurra can’t read a package’s license, it allows the package."
+#: src/site/feature-data.ts
+msgid "Kurra verifies a Sigstore bundle you supply and never signs anything."
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "A token expires after 90 days unless you set another lifetime."
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Each tenant connects its own S3-compatible bucket."
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Verify build provenance for packages you host"
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "A file that doesn’t match is never cached or served."
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Stops a public package from shadowing one you host."
 msgstr ""
 
 #: src/site/Compliance.tsx
 msgid "Provenance"
 msgstr ""
 
+#: src/routes/features.tsx
 #: src/site/Header.tsx
-msgid "Compliance"
+msgid "Features"
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Activity feed and a tamper-evident audit log"
 msgstr ""
 
 #: src/site/Hosting.tsx
 msgid "Use Kurra cloud, or run Kurra yourself"
 msgstr ""
 
+#: src/site/Compliance.tsx
+msgid "Kurra checks the signatures, checksums, and attestations that upstream registries publish, and records the result. A file that doesn’t match a published checksum is never cached or served."
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Free-tier limits"
+msgstr ""
+
+#: src/site/control-coverage.ts
+msgid "License policy"
+msgstr ""
+
 #: src/site/Setup.tsx
 msgid "Switch a client by changing its registry address"
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Auditor and Viewer roles for an organization"
 msgstr ""
 
 #: src/site/Compliance.tsx
 msgid "Package licenses"
 msgstr ""
 
+#: src/site/feature-data.ts
+msgid "Mirroring and caching"
+msgstr ""
+
+#: src/site/FeatureTable.tsx
+msgid "Features in the open source version and in Enterprise"
+msgstr ""
+
 #: src/routes/not-found.tsx
 msgid "Go to the home page"
 msgstr ""
 
-#: src/site/Header.tsx
-msgid "Setup"
+#: src/site/feature-data.ts
+msgid "Allow or block a package or version by hand"
 msgstr ""
 
 #: src/site/Decisions.tsx
@@ -293,10 +539,6 @@ msgstr ""
 
 #: src/site/samples.tsx
 msgid "Advisory <0>{advisory}</0>, critical. Fixed in <1>{fixed}</1>."
-msgstr ""
-
-#: src/site/Header.tsx
-msgid "Kurra, back to the top"
 msgstr ""
 
 #: src/site/Compliance.tsx
@@ -315,12 +557,32 @@ msgstr ""
 msgid "{count, plural, one {# ecosystem, one gateway} other {# ecosystems, one gateway}}"
 msgstr ""
 
+#: src/site/feature-data.ts
+msgid "Publish your own packages to a Kurra registry"
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Check upstream signatures, checksums, and attestations, and record the result"
+msgstr ""
+
 #: src/site/Ecosystems.tsx
 msgid "Licenses"
 msgstr ""
 
+#: src/site/feature-data.ts
+msgid "Set by your license"
+msgstr ""
+
 #: src/site/Header.tsx
 msgid "Primary"
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Cache-first and direct fetch modes"
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Tenants and registries per organization"
 msgstr ""
 
 #: src/site/Setup.tsx
@@ -343,6 +605,18 @@ msgstr ""
 msgid "Put a decision in front of every install"
 msgstr ""
 
+#: src/site/Compliance.tsx
+msgid "Refuses a version until it has been published for the number of days you set. This covers every ecosystem except Docker and OCI Helm charts, which state no publish time."
+msgstr ""
+
+#: src/site/FeatureTable.tsx
+msgid "Open source"
+msgstr ""
+
+#: src/routes/features.tsx
+msgid "See how Kurra works"
+msgstr ""
+
 #: src/site/LocalePicker.tsx
 msgid "Language"
 msgstr ""
@@ -359,28 +633,82 @@ msgstr ""
 msgid "A tenant is a team or business unit in your organization. Its registries, tokens, roles, usage, and activity belong to it alone."
 msgstr ""
 
+#: src/site/CoverageTable.tsx
+msgid "Partly"
+msgstr ""
+
+#: src/site/Compliance.tsx
+msgid "Upstream verification"
+msgstr ""
+
 #: src/site/DecisionStream.tsx
 msgid "Activity"
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Sign in with GitHub"
+msgstr ""
+
+#: src/routes/features.tsx
+msgid "apt, apk, and RPM have no name reputation check, because the distribution sets package names."
 msgstr ""
 
 #: src/site/Access.tsx
 msgid "Sign in with GitHub, or with single sign-on."
 msgstr ""
 
+#: src/site/feature-data.ts
+msgid "Available when you host Kurra yourself."
+msgstr ""
+
 #: src/site/Hosting.tsx
 msgid "Each tenant connects its own S3-compatible bucket. Kurra doesn’t keep a bucket of its own."
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Download CSV or NDJSON for an auditor."
 msgstr ""
 
 #: src/site/DecisionStream.tsx
 msgid "Times in UTC"
 msgstr ""
 
+#: src/site/feature-data.ts
+msgid "Upstream rate limits, backoff, and stale copies when an upstream fails"
+msgstr ""
+
 #: src/site/DecisionStream.tsx
 msgid "Decisions in this sample"
 msgstr ""
 
+#: src/site/feature-data.ts
+msgid "Single sign-on with OIDC or SAML"
+msgstr ""
+
+#: src/site/Compliance.tsx
+#: src/site/control-coverage.ts
+#: src/site/feature-data.ts
+msgid "Minimum release age"
+msgstr ""
+
 #: src/site/Setup.tsx
 msgid "A hosted registry stores the packages your own teams publish and serves them like any other registry."
+msgstr ""
+
+#: src/routes/features.tsx
+msgid "Kurra is open source, and you can run it yourself. Enterprise adds policy controls, hosted registries, identity features, and audit export, and needs a Kurra license."
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Storage in a bucket you own"
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Hosted registries"
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Package policy"
 msgstr ""
 
 #: src/site/Compliance.tsx

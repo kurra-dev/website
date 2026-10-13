@@ -24,15 +24,16 @@ settings.
 
 ## Where things are
 
-| Path                    | What it is                                                                                                                                          |
-| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `src/routes/`           | The home page and the not-found page. `src/app.tsx` picks one from the address                                                                      |
-| `src/site/`             | One file per section of the page, plus the shared pieces (decision pill, glyphs, client setup tabs, product panels)                                 |
-| `src/styles/tokens.css` | The design tokens, copied from `design-system/generated/COMPONENT_SPEC_TOKENS.css`. Do not edit; copy the file again when the design system changes |
-| `src/styles.css`        | Marketing styles built on the tokens. Bands set `data-theme`, so ink sections use the dark tokens and paper sections the light ones                 |
-| `src/lib/i18n/`         | The same thin layer over Lingui as the console, adapted for prerendered pages                                                                       |
-| `src/locales/`          | The catalogs. `en-XA` is the pseudo-locale; load the page with `?locale=en-XA` to find hardcoded strings and overflow                               |
-| `src/site/config.ts`    | The GitHub link behind every "View Kurra on GitHub" button, and the sample hostnames used in the client snippets                                    |
+| Path                       | What it is                                                                                                                                          |
+| -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `src/routes/`              | The home page, the features page (`/features/`), and the not-found page. `src/app.tsx` picks one from the address                                   |
+| `src/site/`                | One file per section of the page, plus the shared pieces (decision pill, glyphs, client setup tabs, product panels)                                 |
+| `src/site/feature-data.ts` | The open source and Enterprise comparison table. Keep it in step with `internal/entitlement` and `docs/gateway/controls.md` in the Kurra repo       |
+| `src/styles/tokens.css`    | The design tokens, copied from `design-system/generated/COMPONENT_SPEC_TOKENS.css`. Do not edit; copy the file again when the design system changes |
+| `src/styles.css`           | Marketing styles built on the tokens. Bands set `data-theme`, so ink sections use the dark tokens and paper sections the light ones                 |
+| `src/lib/i18n/`            | The same thin layer over Lingui as the console, adapted for prerendered pages                                                                       |
+| `src/locales/`             | The catalogs. `en-XA` is the pseudo-locale; load the page with `?locale=en-XA` to find hardcoded strings and overflow                               |
+| `src/site/config.ts`       | The GitHub link behind every "View Kurra on GitHub" button, and the sample hostnames used in the client snippets                                    |
 
 ## Writing rules
 
