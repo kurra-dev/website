@@ -11,7 +11,7 @@ export function Hosting() {
         title={<Trans>Use Kurra cloud, or run Kurra yourself</Trans>}
         lead={
           <Trans>
-            Either way, your packages live in a storage bucket you own, and each tenant stays
+            Either way, your packages are stored in a bucket you own, and each tenant is kept
             separate from the others.
           </Trans>
         }
@@ -23,7 +23,8 @@ export function Hosting() {
           </h3>
           <p>
             <Trans>
-              Each tenant configures its own S3-compatible bucket. Kurra has none of its own.
+              Each tenant connects its own S3-compatible bucket. Kurra doesn’t keep a bucket of its
+              own.
             </Trans>
           </p>
         </article>
@@ -41,8 +42,8 @@ export function Hosting() {
           </h3>
           <p>
             <Trans>
-              Registries, tokens, roles, usage, and activity belong to one tenant, a team or
-              business unit inside your organization.
+              A tenant is a team or business unit in your organization. Its registries, tokens,
+              roles, usage, and activity belong to it alone.
             </Trans>
           </p>
         </article>

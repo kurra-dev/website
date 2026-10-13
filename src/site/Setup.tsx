@@ -13,20 +13,23 @@ export function Setup() {
             title={<Trans>Switch a client by changing its registry address</Trans>}
             lead={
               <Trans>
-                Package managers keep working the way they do today. You change the address they
-                use, and Kurra serves what the upstream has, after checking it.
+                Your package managers work the way they do today. You change the address they use,
+                and Kurra serves what the upstream has once it passes the checks.
               </Trans>
             }
           />
           <ul className="points">
             <li>
               <Trans>
-                A mirror fetches a package from its upstream the first time someone asks for it, and
-                keeps a copy.
+                A mirror fetches a package from its upstream the first time someone asks for it,
+                then keeps a copy.
               </Trans>
             </li>
             <li>
-              <Trans>A hosted registry serves the packages your teams publish.</Trans>
+              <Trans>
+                A hosted registry stores the packages your own teams publish and serves them like
+                any other registry.
+              </Trans>
             </li>
             <li>
               <Trans>

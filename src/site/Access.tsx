@@ -142,7 +142,7 @@ function TokensPanel() {
           </tbody>
         </table>
       </div>
-      <footer className="panel-foot">{t`A token is shown once, when you create it, and is hashed afterward.`}</footer>
+      <footer className="panel-foot">{t`A token is shown once, when you create it. Kurra keeps only a hash of it afterward.`}</footer>
     </section>
   );
 }
@@ -157,14 +157,18 @@ export function Access() {
             title={<Trans>Give each token only what it needs</Trans>}
             lead={
               <Trans>
-                A token holds fewer permissions than its owner, never more, and reaches only the
-                registries you choose. It expires after 90 days unless you choose another lifetime.
+                A token can hold fewer permissions than its owner, but never more, and can reach
+                only the registries you choose. It expires after 90 days unless you set another
+                lifetime.
               </Trans>
             }
           />
           <ul className="points">
             <li>
-              <Trans>An organization owns its tenants, and its settings win over theirs.</Trans>
+              <Trans>
+                An organization owns its tenants, and organization settings override tenant
+                settings.
+              </Trans>
             </li>
             <li>
               <Trans>
@@ -177,7 +181,7 @@ export function Access() {
             </li>
             <li>
               <Trans>
-                A CI job can exchange its own identity for a short-lived token, with no stored
+                A CI job can trade its own identity for a short-lived token, so you don’t store a
                 secret.
               </Trans>
             </li>

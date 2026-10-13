@@ -21,10 +21,10 @@ export function Hero() {
         </h1>
         <p className="lead">
           <Trans>
-            Point your package managers at Kurra, a caching pull-through gateway for{" "}
-            <Plural value={count} one="# ecosystem" other="# ecosystems" />. Each package is checked
-            against advisories, package licenses, and a reputation check, and the decision is
-            recorded with its reason.
+            Point your package managers at Kurra, a caching gateway for{" "}
+            <Plural value={count} one="# ecosystem" other="# ecosystems" />. It checks each package
+            for known advisories, disallowed licenses, and look-alike names, then records the
+            decision and its reason.
           </Trans>
         </p>
         <div className="actions">

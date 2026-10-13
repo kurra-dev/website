@@ -12,8 +12,8 @@ export function Decisions() {
         title={<Trans>Two decisions, each with a reason</Trans>}
         lead={
           <Trans>
-            Every package version is Allowed or Blocked. Kurra records what decided and why, so the
-            person whose build stopped can read the rule that stopped it.
+            Every package version is Allowed or Blocked. Kurra records the reason for each decision,
+            so the person whose build stopped can see which rule stopped it.
           </Trans>
         }
       />
@@ -25,8 +25,8 @@ export function Decisions() {
           </h3>
           <p>
             <Trans>
-              Either the checks found no reason to stop it, or a person allowed it. Allowed means no
-              rule stopped it. It never means safe.
+              Either no check found a reason to stop it, or a person allowed it. Allowed means no
+              rule stopped the package. It doesn’t mean the package is safe.
             </Trans>
           </p>
         </article>
@@ -37,8 +37,8 @@ export function Decisions() {
           </h3>
           <p>
             <Trans>
-              The reason names the cause, such as an advisory, a license, or an administrator.
-              Clients get an error that names the rule and points to a way forward.
+              Clients get an error that names the rule and says what to do next. The reason names
+              the cause, such as an advisory, a license, or an administrator.
             </Trans>
           </p>
         </article>

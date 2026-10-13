@@ -40,7 +40,7 @@ export function Ecosystems() {
         lead={
           <Trans>
             Tokens, roles, and activity work the same way in every ecosystem. Advisory and license
-            checks apply where the ecosystem has the data for them.
+            checks run wherever the ecosystem provides the data.
           </Trans>
         }
       />

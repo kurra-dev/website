@@ -21,45 +21,46 @@ export function Compliance() {
         lead={
           <Trans>
             Advisories, package licenses, software bills of materials, provenance, and an audit log
-            sit next to the cache, not in a separate tool.
+            are part of the cache itself, not a separate tool you add.
           </Trans>
         }
       />
       <div className="facts">
         <Fact title={<Trans>Advisories</Trans>}>
           <Trans>
-            Each version is checked against published advisories from npm and OSV when it is first
-            pulled, and cached versions are checked again later. This covers every ecosystem except
+            Each version is checked against published advisories from npm and OSV the first time it
+            is pulled. Cached versions are checked again later. Every ecosystem is covered except
             Docker, Helm, and Terraform.
           </Trans>
         </Fact>
         <Fact title={<Trans>Package licenses</Trans>}>
           <Trans>
-            Set an SPDX allow or deny list. This covers npm, PyPI, Cargo, Go, Maven, and NuGet. A
-            license Kurra can’t read is allowed, not blocked.
+            Set an SPDX allow list or deny list for npm, PyPI, Cargo, Go, Maven, and NuGet. If Kurra
+            can’t read a package’s license, it allows the package.
           </Trans>
         </Fact>
         <Fact title={<Trans>Reputation check</Trans>}>
           <Trans>
-            Flags an npm or PyPI package name that looks like a typosquat of a popular one, before
-            the package is fetched.
+            Flags npm and PyPI package names that look like typosquats of popular packages, before
+            anything is fetched.
           </Trans>
         </Fact>
         <Fact title={<Trans>Software bill of materials</Trans>}>
           <Trans>
-            Generated in CycloneDX format the first time a Docker or Helm image is cached.
+            Kurra generates a CycloneDX bill of materials the first time a Docker or Helm image is
+            cached.
           </Trans>
         </Fact>
         <Fact title={<Trans>Provenance</Trans>}>
           <Trans>
-            Verifies SLSA provenance from a Sigstore bundle you supply, for packages you host. Kurra
-            stores public keys and never signs anything.
+            For packages you host, Kurra verifies SLSA provenance from a Sigstore bundle you supply.
+            It stores public keys and never signs anything.
           </Trans>
         </Fact>
         <Fact title={<Trans>Activity and audit log</Trans>}>
           <Trans>
-            Each decision is recorded with what decided, when, and why. The audit log behind it is
-            tamper-evident.
+            Activity records each decision with its reason and the time it was made. The audit log
+            behind it is tamper-evident.
           </Trans>
         </Fact>
       </div>
