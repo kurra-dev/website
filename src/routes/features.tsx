@@ -31,8 +31,9 @@ export function FeaturesPage() {
             </h1>
             <p className="lead">
               <Trans>
-                Kurra is open source, and you can run it yourself. Enterprise adds policy controls,
-                hosted registries, identity features, and audit export, and needs a Kurra license.
+                Kurra is open source, and you can run it yourself, with up to two tenants and three
+                hosted registries each. Enterprise adds policy controls, identity features, audit
+                export, and higher limits, and needs a Kurra license.
               </Trans>
             </p>
             <div className="actions">

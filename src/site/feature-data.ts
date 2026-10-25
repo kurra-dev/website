@@ -148,6 +148,7 @@ export const FEATURE_GROUPS: readonly FeatureGroup[] = [
         name: msg`Publish your own packages to a Kurra registry`,
         openSource: "yes",
         enterprise: "yes",
+        note: msg`Open source includes up to 3 hosted registries per tenant.`,
       },
       {
         id: "reserved-names",
@@ -221,7 +222,7 @@ export const FEATURE_GROUPS: readonly FeatureGroup[] = [
       {
         id: "private-networks",
         name: msg`Private network allowlists`,
-        openSource: "no",
+        openSource: "yes",
         enterprise: "yes",
         note: msg`Available when you host Kurra yourself.`,
       },
@@ -258,9 +259,10 @@ export const FEATURE_GROUPS: readonly FeatureGroup[] = [
       },
       {
         id: "limits",
-        name: msg`Tenants and registries per organization`,
-        openSource: msg`Free-tier limits`,
+        name: msg`Tenants and hosted registries`,
+        openSource: msg`2 tenants, 3 hosted registries each`,
         enterprise: msg`Set by your license`,
+        note: msg`Need more? An Enterprise license raises both limits.`,
       },
     ],
   },
