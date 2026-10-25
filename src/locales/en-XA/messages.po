@@ -17,6 +17,10 @@ msgstr ""
 msgid "Software bill of materials"
 msgstr ""
 
+#: src/site/feature-data.ts
+msgid "Tenants and hosted registries"
+msgstr ""
+
 #: src/site/Access.tsx
 msgid "A CI job can trade its own identity for a short-lived token, so you don’t store a secret."
 msgstr ""
@@ -96,6 +100,10 @@ msgstr ""
 
 #: src/site/feature-data.ts
 msgid "Private network allowlists"
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Need more? An Enterprise license raises both limits."
 msgstr ""
 
 #: src/site/Access.tsx
@@ -494,7 +502,7 @@ msgid "Kurra checks the signatures, checksums, and attestations that upstream re
 msgstr ""
 
 #: src/site/feature-data.ts
-msgid "Free-tier limits"
+msgid "2 tenants, 3 hosted registries each"
 msgstr ""
 
 #: src/site/control-coverage.ts
@@ -582,11 +590,11 @@ msgid "Primary"
 msgstr ""
 
 #: src/site/feature-data.ts
-msgid "Cache-first and direct fetch modes"
+msgid "Open source includes up to 3 hosted registries per tenant."
 msgstr ""
 
 #: src/site/feature-data.ts
-msgid "Tenants and registries per organization"
+msgid "Cache-first and direct fetch modes"
 msgstr ""
 
 #: src/site/Setup.tsx
@@ -615,6 +623,10 @@ msgstr ""
 
 #: src/site/FeatureTable.tsx
 msgid "Open source"
+msgstr ""
+
+#: src/routes/features.tsx
+msgid "Kurra is open source, and you can run it yourself, with up to two tenants and three hosted registries each. Enterprise adds policy controls, identity features, audit export, and higher limits, and needs a Kurra license."
 msgstr ""
 
 #: src/routes/features.tsx
@@ -693,10 +705,6 @@ msgstr ""
 
 #: src/site/Setup.tsx
 msgid "A hosted registry stores the packages your own teams publish and serves them like any other registry."
-msgstr ""
-
-#: src/routes/features.tsx
-msgid "Kurra is open source, and you can run it yourself. Enterprise adds policy controls, hosted registries, identity features, and audit export, and needs a Kurra license."
 msgstr ""
 
 #: src/site/feature-data.ts
