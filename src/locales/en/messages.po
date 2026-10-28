@@ -118,6 +118,10 @@ msgstr "A reason in the terminal, not a mystery"
 msgid "Find the code, the documentation, and the latest changes on GitHub."
 msgstr "Find the code, the documentation, and the latest changes on GitHub."
 
+#: src/site/feature-data.ts
+msgid "Up to 10 mirrors per tenant"
+msgstr "Up to 10 mirrors per tenant"
+
 #: src/site/CoverageTable.tsx
 msgid "Not covered"
 msgstr "Not covered"
@@ -149,6 +153,10 @@ msgstr "Either no check found a reason to stop it, or a person allowed it. Kurra
 #: src/site/Hero.tsx
 msgid "Point your package managers at Kurra, a caching gateway for {count, plural, one {# ecosystem} other {# ecosystems}}. It checks each package for known advisories, disallowed licenses, and look-alike names, then records the decision and its reason."
 msgstr "Point your package managers at Kurra, a caching gateway for {count, plural, one {# ecosystem} other {# ecosystems}}. It checks each package for known advisories, disallowed licenses, and look-alike names, then records the decision and its reason."
+
+#: src/site/feature-data.ts
+msgid "Both feeds can be switched off for an air-gapped install."
+msgstr "Both feeds can be switched off for an air-gapped install."
 
 #: src/site/DecisionStream.tsx
 msgid "Resume updates"
@@ -193,10 +201,6 @@ msgstr "Access and identity"
 msgid "An organization owns its tenants, and organization settings override tenant settings."
 msgstr "An organization owns its tenants, and organization settings override tenant settings."
 
-#: src/site/feature-data.ts
-msgid "npm only"
-msgstr "npm only"
-
 #: src/site/Decisions.tsx
 msgid "The message your package manager prints leads with the outcome, names the rule, and says what to do next."
 msgstr "The message your package manager prints leads with the outcome, names the rule, and says what to do next."
@@ -229,10 +233,6 @@ msgstr "IP allowlists for each registry"
 #: src/site/feature-data.ts
 msgid "Audit log export"
 msgstr "Audit log export"
-
-#: src/site/feature-data.ts
-msgid "Enterprise syncs OSV data ahead of time for every ecosystem it covers."
-msgstr "Enterprise syncs OSV data ahead of time for every ecosystem it covers."
 
 #: src/site/feature-data.ts
 msgid "Ecosystem analytics and usage metrics"
@@ -318,6 +318,10 @@ msgstr "Clients get an error that names the rule and says what to do next. The r
 msgid "Copy"
 msgstr "Copy"
 
+#: src/site/feature-data.ts
+msgid "Exploit likelihood (EPSS) and CISA known-exploited flags beside each advisory"
+msgstr "Exploit likelihood (EPSS) and CISA known-exploited flags beside each advisory"
+
 #: src/site/Decisions.tsx
 msgid "Nothing stopped it"
 msgstr "Nothing stopped it"
@@ -388,6 +392,10 @@ msgid "Not included"
 msgstr "Not included"
 
 #: src/site/feature-data.ts
+msgid "Up to 3 per registry"
+msgstr "Up to 3 per registry"
+
+#: src/site/feature-data.ts
 msgid "Custom roles"
 msgstr "Custom roles"
 
@@ -398,6 +406,11 @@ msgstr "Tokens limited to chosen permissions and registries"
 #: src/site/feature-data.ts
 msgid "Reputation check for look-alike package names"
 msgstr "Reputation check for look-alike package names"
+
+#: src/site/feature-data.ts
+#: src/site/feature-data.ts
+msgid "Need more? An Enterprise license raises the limit."
+msgstr "Need more? An Enterprise license raises the limit."
 
 #: src/site/Access.tsx
 msgid "Expires"
@@ -451,6 +464,10 @@ msgstr "Configuration copied"
 #: src/site/samples.tsx
 msgid "License <0>{license}</0> is blocked by the license policy."
 msgstr "License <0>{license}</0> is blocked by the license policy."
+
+#: src/site/feature-data.ts
+msgid "Custom hostnames for a hosted registry"
+msgstr "Custom hostnames for a hosted registry"
 
 #: src/site/feature-data.ts
 msgid "Verify mirrored files match the checksum the upstream publishes"
@@ -541,6 +558,10 @@ msgstr "Go to the home page"
 msgid "Allow or block a package or version by hand"
 msgstr "Allow or block a package or version by hand"
 
+#: src/site/feature-data.ts
+msgid "Synced from OSV for every ecosystem except Docker, Helm, and Terraform."
+msgstr "Synced from OSV for every ecosystem except Docker, Helm, and Terraform."
+
 #: src/site/Decisions.tsx
 msgid "Two decisions, each with a reason"
 msgstr "Two decisions, each with a reason"
@@ -581,6 +602,8 @@ msgstr "Check upstream signatures, checksums, and attestations, and record the r
 msgid "Licenses"
 msgstr "Licenses"
 
+#: src/site/feature-data.ts
+#: src/site/feature-data.ts
 #: src/site/feature-data.ts
 msgid "Set by your license"
 msgstr "Set by your license"

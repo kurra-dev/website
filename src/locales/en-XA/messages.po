@@ -118,6 +118,10 @@ msgstr ""
 msgid "Find the code, the documentation, and the latest changes on GitHub."
 msgstr ""
 
+#: src/site/feature-data.ts
+msgid "Up to 10 mirrors per tenant"
+msgstr ""
+
 #: src/site/CoverageTable.tsx
 msgid "Not covered"
 msgstr ""
@@ -148,6 +152,10 @@ msgstr ""
 
 #: src/site/Hero.tsx
 msgid "Point your package managers at Kurra, a caching gateway for {count, plural, one {# ecosystem} other {# ecosystems}}. It checks each package for known advisories, disallowed licenses, and look-alike names, then records the decision and its reason."
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Both feeds can be switched off for an air-gapped install."
 msgstr ""
 
 #: src/site/DecisionStream.tsx
@@ -193,10 +201,6 @@ msgstr ""
 msgid "An organization owns its tenants, and organization settings override tenant settings."
 msgstr ""
 
-#: src/site/feature-data.ts
-msgid "npm only"
-msgstr ""
-
 #: src/site/Decisions.tsx
 msgid "The message your package manager prints leads with the outcome, names the rule, and says what to do next."
 msgstr ""
@@ -228,10 +232,6 @@ msgstr ""
 
 #: src/site/feature-data.ts
 msgid "Audit log export"
-msgstr ""
-
-#: src/site/feature-data.ts
-msgid "Enterprise syncs OSV data ahead of time for every ecosystem it covers."
 msgstr ""
 
 #: src/site/feature-data.ts
@@ -318,6 +318,10 @@ msgstr ""
 msgid "Copy"
 msgstr ""
 
+#: src/site/feature-data.ts
+msgid "Exploit likelihood (EPSS) and CISA known-exploited flags beside each advisory"
+msgstr ""
+
 #: src/site/Decisions.tsx
 msgid "Nothing stopped it"
 msgstr ""
@@ -388,6 +392,10 @@ msgid "Not included"
 msgstr ""
 
 #: src/site/feature-data.ts
+msgid "Up to 3 per registry"
+msgstr ""
+
+#: src/site/feature-data.ts
 msgid "Custom roles"
 msgstr ""
 
@@ -397,6 +405,11 @@ msgstr ""
 
 #: src/site/feature-data.ts
 msgid "Reputation check for look-alike package names"
+msgstr ""
+
+#: src/site/feature-data.ts
+#: src/site/feature-data.ts
+msgid "Need more? An Enterprise license raises the limit."
 msgstr ""
 
 #: src/site/Access.tsx
@@ -450,6 +463,10 @@ msgstr ""
 
 #: src/site/samples.tsx
 msgid "License <0>{license}</0> is blocked by the license policy."
+msgstr ""
+
+#: src/site/feature-data.ts
+msgid "Custom hostnames for a hosted registry"
 msgstr ""
 
 #: src/site/feature-data.ts
@@ -541,6 +558,10 @@ msgstr ""
 msgid "Allow or block a package or version by hand"
 msgstr ""
 
+#: src/site/feature-data.ts
+msgid "Synced from OSV for every ecosystem except Docker, Helm, and Terraform."
+msgstr ""
+
 #: src/site/Decisions.tsx
 msgid "Two decisions, each with a reason"
 msgstr ""
@@ -581,6 +602,8 @@ msgstr ""
 msgid "Licenses"
 msgstr ""
 
+#: src/site/feature-data.ts
+#: src/site/feature-data.ts
 #: src/site/feature-data.ts
 msgid "Set by your license"
 msgstr ""
