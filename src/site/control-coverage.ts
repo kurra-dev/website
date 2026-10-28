@@ -5,7 +5,7 @@ import type { EcosystemId } from "./glyphs";
 
 // Which Enterprise policy controls cover which ecosystems. Copied from the control coverage table in the Kurra
 // repository (internal/controlcoverage/coverage.go, which also generates the table in docs/gateway/controls.md),
-// as of 817451b6. When that table changes, change this one: the test in page.test.tsx checks the shape, not the facts.
+// as of b4bc665c. When that table changes, change this one: the test in page.test.tsx checks the shape, not the facts.
 
 export type ControlId =
   "reputation" | "minimumAge" | "advisory" | "license" | "signature" | "attestation";
@@ -46,7 +46,7 @@ const row = (
 export const COVERAGE: Record<EcosystemId, Record<ControlId, Level>> = {
   npm: row(C, C, C, C, C, C),
   pypi: row(C, C, C, C, N, C),
-  maven: row(C, C, C, C, C, N),
+  maven: row(C, C, C, C, C, C),
   nuget: row(C, C, C, C, C, N),
   go: row(C, C, C, C, C, N),
   cargo: row(C, C, C, C, N, N),
@@ -56,8 +56,8 @@ export const COVERAGE: Record<EcosystemId, Record<ControlId, Level>> = {
   apt: row(N, C, C, N, C, N),
   apk: row(N, C, C, C, C, N),
   rpm: row(N, C, C, C, C, N),
-  docker: row(C, N, N, N, N, C),
-  helm: row(C, P, N, N, P, P),
+  docker: row(C, N, N, N, C, C),
+  helm: row(C, P, N, N, C, P),
 };
 
 /** Whether a control does anything for an ecosystem, wholly or in part. */

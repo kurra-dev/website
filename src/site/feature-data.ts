@@ -31,8 +31,9 @@ export const FEATURE_GROUPS: readonly FeatureGroup[] = [
       {
         id: "mirrors",
         name: msg`Mirrors for every supported ecosystem`,
-        openSource: "yes",
-        enterprise: "yes",
+        openSource: msg`Up to 10 mirrors per tenant`,
+        enterprise: msg`Set by your license`,
+        note: msg`Need more? An Enterprise license raises the limit.`,
       },
       {
         id: "bucket",
@@ -75,9 +76,16 @@ export const FEATURE_GROUPS: readonly FeatureGroup[] = [
       {
         id: "advisory-data",
         name: msg`Known advisories shown on package pages`,
-        openSource: msg`npm only`,
+        openSource: "yes",
         enterprise: "yes",
-        note: msg`Enterprise syncs OSV data ahead of time for every ecosystem it covers.`,
+        note: msg`Synced from OSV for every ecosystem except Docker, Helm, and Terraform.`,
+      },
+      {
+        id: "advisory-signals",
+        name: msg`Exploit likelihood (EPSS) and CISA known-exploited flags beside each advisory`,
+        openSource: "yes",
+        enterprise: "yes",
+        note: msg`Both feeds can be switched off for an air-gapped install.`,
       },
       {
         id: "advisory-blocking",
@@ -151,9 +159,16 @@ export const FEATURE_GROUPS: readonly FeatureGroup[] = [
         note: msg`Open source includes up to 3 hosted registries per tenant.`,
       },
       {
+        id: "registry-hostnames",
+        name: msg`Custom hostnames for a hosted registry`,
+        openSource: msg`Up to 3 per registry`,
+        enterprise: msg`Set by your license`,
+        note: msg`Need more? An Enterprise license raises the limit.`,
+      },
+      {
         id: "reserved-names",
         name: msg`Reserved package names that mirrors never serve`,
-        openSource: "no",
+        openSource: "yes",
         enterprise: "yes",
         note: msg`Stops a public package from shadowing one you host.`,
       },

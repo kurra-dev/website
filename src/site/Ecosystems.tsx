@@ -5,6 +5,10 @@ import { ECOSYSTEMS } from "./ecosystem-data";
 import { EcosystemTile } from "./glyphs";
 import { Section, SectionHead } from "./Section";
 
+const SORTED_ECOSYSTEMS = [...ECOSYSTEMS].sort((a, b) =>
+  a.name.localeCompare(b.name, "en", { sensitivity: "base" }),
+);
+
 export function Ecosystems() {
   const { t } = useLingui();
   const count = ECOSYSTEMS.length;
@@ -30,7 +34,7 @@ export function Ecosystems() {
         }
       />
       <ul className="eco-grid">
-        {ECOSYSTEMS.map(({ id, name }) => (
+        {SORTED_ECOSYSTEMS.map(({ id, name }) => (
           <li key={id} className="eco-card">
             <EcosystemTile id={id} large />
             <span className="eco-name">{name}</span>
